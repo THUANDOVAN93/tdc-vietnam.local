@@ -1,0 +1,105 @@
+
+	<!-- == section_global/ == -->
+	<div id="section_global">
+
+		<!-- header/ -->
+		<div id="header">
+			<h1><a href="<?php echo $this->webroot; ?>" id="siteid" name="siteid">東京デベロップメントコンサルタント | TOKYO DEVELOPMENT CONSULTANT</a></h1>
+			<h2 class="thailand">タイエリア THAILAND AREA</h2>
+			<dl>
+				<dt>現在登録物件数：</dt>
+				<dd><?php echo h(number_format($totalBuildingCount)); ?>件</dd>
+			</dl>
+		</div>
+		<!-- /header -->
+
+		<!-- nav_global/ -->
+		<div id="nav_global">
+			<h3 id="nav_global_factory">工場・工業用地を探す</h3>
+			<ul>
+				<li class="nav_global_factory01"><a href="<?php echo $this->webroot; ?>factory/area/">タイ全域工業団地から探す</a></li>
+			</ul>
+			<h3 id="nav_global_office">事務所を探す</h3>
+			<ul>
+				<li class="nav_global_office01"><a href="<?php echo $this->webroot; ?>office/area/">エリアから探す</a></li>
+				<li class="nav_global_office02"><a href="<?php echo $this->webroot; ?>office/station/">駅から探す</a></li>
+			</ul>
+			<h3 id="nav_global_residence">住まいを探す</h3>
+			<ul>
+				<li class="nav_global_residence01"><a href="<?php echo $this->webroot; ?>residence/area/">エリアから探す</a></li>
+				<li class="nav_global_residence02"><a href="<?php echo $this->webroot; ?>residence/station/">駅から探す</a></li>
+			</ul>
+			<h3 id="nav_global_about">東京デベロップメントコンサルタントとは</h3>
+			<ul>
+				<li class="nav_global_about01"><a href="link">不動産部門</a></li>
+				<li class="nav_global_about02"><a href="link">内装建築工事部門</a></li>
+				<li class="nav_global_about03"><a href="link">進出コンサルティング部門</a></li>
+				<li class="nav_global_about04"><a href="link">貿易部門</a></li>
+				<li class="nav_global_about05"><a href="link">その他の事業</a></li>
+			</ul>
+		</div>
+		<!-- /nav_global -->
+
+		<!-- nav_global_sub/ -->
+		<ul id="nav_global_sub" class="clearfix">
+			<li class="nav_global_sub01"><a href="link">Q&amp;A</a></li>
+			<li class="nav_global_sub02"><a href="link">会社情報</a></li>
+			<li class="nav_global_sub03"><a href="link">採用情報</a></li>
+		</ul>
+		<!-- /nav_global_sub -->
+
+		<p id="nav_global_guide"><a href="link">タイでのお住まい 不動産ガイド</a></p>
+
+		<p id="nav_global_calendar"><a href="link">ASEANカレンダー</a></p>
+
+		<!-- aside_column/ -->
+		<h4 class="aside_column_news">ニュース</h4>
+		<div class="aside_column scrollbar">
+			<dl>
+				<dt class="new"><span>2012.09.14</span></dt>
+				<dd>新着情報が入ります。ダミーテキスト。ダミーテキスト。</dd>
+			</dl>
+			<dl>
+				<dt><span>2012.09.14</span></dt>
+				<dd><a href="link">新着情報が入ります。ダミーテキスト。ダミーテキスト。</a></dd>
+			</dl>
+			<dl>
+				<dt><span>2012.09.14</span></dt>
+				<dd>新着情報が入ります。ダミーテキスト。ダミーテキスト。</dd>
+			</dl>
+		</div>
+		<p class="aside_column_backnumber"><a href="link">BACKNUMBER</a></p>
+		<!-- /aside_column -->
+
+		<!-- aside_column/ -->
+		<h4 class="aside_column_info">物件更新情報</h4>
+		<div class="aside_column scrollbar">
+			<dl>
+				<dt class="new"><span>2012.09.14</span></dt>
+				<dd>物件の更新情報が入ります。ダミーテキスト。ダミーテキスト。</dd>
+			</dl>
+			<dl>
+				<dt><span>2012.09.14</span></dt>
+				<dd>物件の更新情報が入ります。ダミーテキスト。ダミーテキスト。</dd>
+			</dl>
+			<dl>
+				<dt><span>2012.09.14</span></dt>
+				<dd>物件の更新情報が入ります。ダミーテキスト。ダミーテキスト。</dd>
+			</dl>
+		</div>
+		<p class="aside_column_backnumber"><a href="link">BACKNUMBER</a></p>
+		<!-- /aside_column -->
+
+		<p id="nav_global_support"><a href="link">内装建築工事もTDCがサポートします！</a></p>
+
+		<p id="nav_global_factlink"><a href="http://www.fact-link.com/index.php?lang=jp" target="_blank">Fact-Link タイの日系製造業ポータルサイト</a></p>
+
+		<!-- aside_column/ -->
+		<h4 class="aside_column_facebook">FACEBOOK PAGE</h4>
+		<div class="aside_column_facebook">
+			<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FTHAI.GoodCompany100&amp;width=200&amp;height=390&amp;show_faces=true&amp;connections=6&amp;colorscheme=light&amp;stream=false&amp;border_color=%23000000&amp;header=true&amp;appId=150800048342214" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:390px;" allowTransparency="true"></iframe>
+		</div>
+		<!-- /aside_column -->
+
+	</div>
+	<!-- == /section_global == -->

@@ -1,0 +1,210 @@
+@charset "utf-8";
+
+/* company.css
+------------------------------------------------ */
+#map-vietnam {
+	position: relative;
+	margin-left: 15px;
+}
+
+.central {
+	width: 700px;
+	height: 552px;
+}
+
+.south {
+	width: 700px;
+	height: 662px;
+}
+
+.north {
+	width: 700px;
+	height: 601px;
+}
+
+#map-vietnam p {
+	position: absolute;
+}
+#map-vietnam .map {
+	top: 0;
+	left: 0;
+	z-index: -100;
+}
+
+/* ベトナム中部 */
+#map-vietnam .num01 { top: 136px; left: 278px;}
+#map-vietnam .num02 { top: 195px; left: 296px;}
+#map-vietnam .num03 { top: 217px; left: 309px;}
+#map-vietnam .num04 { top: 228px; left: 497px;}
+#map-vietnam .num05 { top: 270px; left: 499px;}
+#map-vietnam .num06 { top: 358px; left: 383px;}
+
+/* ベトナム南部 */
+/* Ho Chi Minh */
+#map-vietnam .num07 { top: 145px; left: 195px;}
+#map-vietnam .num08 { top: 173px; left: 263px;}
+#map-vietnam .num09 { top: 256px; left: 309px;}
+#map-vietnam .num10 { top: 270px; left: 340px;}
+#map-vietnam .num11 { top: 271px; left: 382px;}
+#map-vietnam .num12 { top: 268px; left: 226px;}
+#map-vietnam .num13 { top: 314px; left: 267px;}
+#map-vietnam .num14 { top: 329px; left: 301px;}
+#map-vietnam .num15 { top: 319px; left: 330px;}
+#map-vietnam .num16 { top: 331px; left: 216px;}
+#map-vietnam .num17 { top: 378px; left: 262px;}
+#map-vietnam .num18 { top: 425px; left: 331px;}
+
+/* Binh Doung */
+#map-vietnam .num19 {	 top: 229px; left: 311px;}
+#map-vietnam .num20 { top: 205px; left: 334px; z-index:3;}
+#map-vietnam .num21 { top: 183px; left: 331px; z-index:2;}
+#map-vietnam .num22 { top: 166px; left: 320px;}
+#map-vietnam .num23 { top: 134px; left: 315px;}
+#map-vietnam .num24 { top: 97px; left: 352px;}
+#map-vietnam .num25 { top: 91px; left: 315px;}
+#map-vietnam .num26 { top: 73px; left: 311px;z-index:2;}
+#map-vietnam .num27 { top: 57px; left: 306px;}
+#map-vietnam .num28 { top: 75px; left: 210px;}
+#map-vietnam .num29 { top: 53px; left: 280px; z-index:2;}
+#map-vietnam .num30 { top: 36px; left: 276px;}
+#map-vietnam .num31 { top: 39px; left: 255px; z-index:2;}
+#map-vietnam .num32 { top: 14px; left: 254px;}
+
+/* Dong Nai */
+#map-vietnam .num33 { top: 182px; left: 417px;}
+#map-vietnam .num34 { top: 192px; left: 395px;}
+#map-vietnam .num35 { top: 213px; left: 409px;}
+#map-vietnam .num36 { top: 204px; left: 428px;}
+#map-vietnam .num37 { top: 189px; left: 470px;}
+#map-vietnam .num38 { top: 235px; left: 488px;}
+#map-vietnam .num39 { top: 309px; left: 434px;}
+#map-vietnam .num40 { top: 345px; left: 444px;}
+
+/* Ba Ria-Vung Tau */
+#map-vietnam .num41 { top: 413px; left: 498px;}
+#map-vietnam .num42 { top: 426px; left: 519px;}
+#map-vietnam .num43 { top: 437px; left: 503px;}
+#map-vietnam .num44 { top: 479px; left: 509px;}
+#map-vietnam .num45 { top: 474px; left: 528px;}
+
+/* Long An */
+#map-vietnam .num46 { top: 290px; left: 172px;}
+#map-vietnam .num47 { top: 421px; left: 225px;}
+#map-vietnam .num48 { top: 425px; left: 302px;}
+
+/* Long An */
+#map-vietnam .num49 { top: 116px; left: 109px;}
+
+/* ベトナム北部 */
+/* Thai Binh
+#map-vietnam .num50 { top: 33px; left: 669px;}
+ */
+ 
+/* Hai Phong
+#map-vietnam .num51 { top: 70px; left: 581px;}
+#map-vietnam .num52 { top: 270px; left: 233px; }
+#map-vietnam .num53 { top: 280px; left: 228px; }
+#map-vietnam .num54 { top: 288px; left: 232px; }
+#map-vietnam .num55 { top: 299px; left: 229px; }
+#map-vietnam .num56 { top: 390px; left: 245px; }
+ */
+ 
+/* Ha Noi */
+#map-vietnam .num57 { top: 168px; left: 190px; }
+#map-vietnam .num58 { top: 184px; left: 164px; }
+#map-vietnam .num59 { top: 201px; left: 185px; }
+#map-vietnam .num60 { top: 214px; left: 216px; }
+#map-vietnam .num61 { top: 227px; left: 226px; }
+#map-vietnam .num62 { top: 234px; left: 144px; }
+#map-vietnam .num63 { top: 234px; left: 125px; }
+#map-vietnam .num64 { top: 327px; left: 207px; }
+
+/* Bac Ninh
+#map-vietnam .num65 { top: 215px; left: 282px; }
+#map-vietnam .num66 { top: 243px; left: 280px; }
+#map-vietnam .num67 { top: 235px; left: 249px; }
+#map-vietnam .num68 { top: 232px; left: 225px; }
+#map-vietnam .num69 { top: 379px; left: 498px; }
+#map-vietnam .num70 { top: 398px; left: 329px; }
+#map-vietnam .num71 { top: 450px; left: 350px; }
+#map-vietnam .num72 { top: 541px; left: 374px; }
+ */
+ 
+ /* Hung Yan
+#map-vietnam .num73 { top: 556px; left: 374px; }
+#map-vietnam .num74 { top: 558px; left: 340px; }
+ */
+
+ /* Hoa Binh
+#map-vietnam .num75 { top: 261px; left: 484px; }
+#map-vietnam .num76 { top: 352px; left: 488px; }
+ */
+
+/* Ha Nam
+#map-vietnam .num77 { top: 620px; left: 380px; }
+#map-vietnam .num78 { top: 613px; left: 405px; }
+ */
+ 
+ /* Vinh Phuc */
+#map-vietnam .num79 { top: 115px; left: 121px; }
+#map-vietnam .num80 { top: 127px; left: 141px; }
+#map-vietnam .num81 { top: 144px; left: 154px; }
+
+.tooltip {
+	position: absolute;
+	top:330px;
+	left:374px;
+	display: none;
+	width: 162px;
+	padding-bottom: 10px;
+	background: url(/common/images/search/factory_tooltip.png) no-repeat left bottom;
+	text-align: center;
+	line-height: 1.3;
+	z-index:3;
+}
+.tooltip a {
+	display: block;
+	padding: 12px 10px 10px;
+	color: #fff;
+}
+.tooltip a:hover {
+	text-decoration: none;
+	color: #ccc;
+}
+
+/* map-area-link */
+.area-link {
+	opacity: 0.0;}
+.area-link:hover {
+	opacity: 0.3;}
+
+/* area-south */
+#map-vietnam .area01 { top: 97px; left: 49px; font-size: 14px; }
+#map-vietnam .area02 { top: 60px; left: 368px; font-size: 14px; letter-spacing: -0.5px; }
+#map-vietnam .area03 { top: 158px; left: 545px; font-size: 14.5px; letter-spacing: -0.5px; }
+#map-vietnam .area04 { top: 355px; left: 107px; font-size: 14px; letter-spacing: -0.5px; }
+#map-vietnam .area05 { top: 362px; left: 243px; font-size: 14px; }
+#map-vietnam .area06 { top: 471px; left: 560px; font-size: 14.5px; letter-spacing: -0.5px; }
+
+/* area-north */
+#map-vietnam .area07 { top: 50px; left: 180px; font-size: 14px; letter-spacing: -0.5px; }
+#map-vietnam .area08 { top: 174px; left: 106px; font-size: 13.5px; letter-spacing: -0.5px; }
+#map-vietnam .area09 { top: 155px; left: 418px; font-size: 13.5px; }
+#map-vietnam .area10 { top: 337px; left: 84px; font-size: 13.5px; letter-spacing: -0.5px; }
+#map-vietnam .area11 { top: 245px; left: 178px; font-size: 14.5px; letter-spacing: -0.5px; }
+#map-vietnam .area12 { top: 232px; left: 287px; font-size: 14px; letter-spacing: -0.5px; }
+#map-vietnam .area13 { top: 206px; left: 563px; font-size: 13.5px; letter-spacing: -0.3px; }
+#map-vietnam .area14 { top: 310px; left: 414px; font-size: 14px; letter-spacing: -0.5px; }
+#map-vietnam .area15 { top: 291px; left: 336px; font-size: 14.5px; letter-spacing: -0.6px; }
+#map-vietnam .area16 { top: 334px; left: 269px; font-size: 14px; letter-spacing: -0.5px; }
+#map-vietnam .area17 { top: 395px; left: 254px; font-size: 14px; letter-spacing: -0.5px; }
+#map-vietnam .area18 { top: 480px; left: 315px; font-size: 14px; letter-spacing: -0.5px; }
+#map-vietnam .area20 { top: 59px; left: 52px; font-size: 13.5px; letter-spacing: -0.5px; }
+#map-vietnam .area21 { top: 37px; left: 394px; font-size: 13.5px; letter-spacing: -0.5px; }
+#map-vietnam .area22 { top: 437px; left: 376px; font-size: 13.5px; letter-spacing: -0.2px; }
+#map-vietnam .area23 { top: 497px; left: 184px; font-size: 13.5px; letter-spacing: -0.2px; }
+
+
+
+/* area-central */
+#map-vietnam .area19 { top: 253px; left: 121px; font-size: 13.5px; }

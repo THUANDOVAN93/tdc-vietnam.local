@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+/* reset.css */
+html {
+	overflow-y:scroll;
+}
+body,h1,h2,h3,h4,h5,h6,p,div,dl,dt,dd,ul,ol,li,form,fieldset,input,textarea,pre,blockquote,th,td {  
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0px;
+}
+caption,th {
+	text-align:left;
+}
+fieldset {
+	border:0;
+}
+img {
+	border:0;
+	vertical-align:bottom;
+} 
+a {outline:0;}
+a:hover,button:hover,label:hover {cursor:pointer !important;}
+a[name]:hover,a[name]:hover img { 
+	cursor:default !important;
+	filter:alpha(opacity=100) !important;
+	-ms-filter:"alpha(opacity=100)" !important;
+	-moz-opacity:1.0 !important;
+	-khtml-opacity:1.0 !important;
+	opacity:1.0 !important;
+}
+a[href]:hover,a[href]:hover img { 
+	cursor:pointer !important;
+}
+
+/* fontstyle */
+body,td,th {
+	font-size:12px;
+	line-height:1.5;
+	font-family:"メイリオ","Meiryo","ヒラギノ角ゴ Pro w3","Hiragino Kaku Gothic Pro","Osaka","ＭＳ Ｐゴシック","MS P Gothic","Arial",sans-serif;
+}
+/* for IE */
+body {font-size:82%\9;}
+body th,body td {font-size:100%\9;}
+body:not(:target) {font-size:82%\9 !important;}
+body:not(:target) th {font-size:100%\9 !important;}
+body:not(:target) td {font-size:100%\9 !important;}
+* html body {font-size:82%;}
+* html body th {font-size:82% !important;}
+* html body td {font-size:82% !important;}
+*:first-child+html body {font-size:82%;}
+*:first-child+html body th {font-size:82%;}
+*:first-child+html body th {font-size:82%;}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+address,caption,cite,code,dfn,em,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+/* end for IE */
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+address,caption,cite,code,dfn,em,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+
+/* list */
+ol,ul,li {
+	list-style:none;
+}
+ul.ullist{
+	padding-left:2em;
+}
+ul.ullist li{
+	list-style-type:disc;
+}
+ol.ollist{
+	padding-left:2em;
+}
+ol.ollist li{
+	list-style-type:decimal;
+}
+
+/* clearfix */
+.clearfix {
+	display:block;
+}
+.clearfix:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+	font-size:0;
+	line-height:0;
+}
+.clearfix {
+	*overflow:hidden;
+	*zoom:1;
+}
+.clearfix:not(:target) {
+	/* overflow:hidden\9; */
+	/* zoom:1\9; */
+}
+/* hides from ie-mac \*/
+* html .clearfix{
+	height:1%;
+	overflow:visible;
+}
+/* end hide from ie-mac */

@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+/* company.css
+------------------------------------------------ */
+
+#companyCnt table {
+	margin: 20px 0;
+	width: 730px;
+	border-bottom: solid 1px #ccc;
+	border-right: solid 1px #ccc;
+}
+#companyCnt table th,
+#companyCnt table td {
+	padding: 10px 15px;
+	border-top: solid 1px #ccc;
+	border-left: solid 1px #ccc;
+	vertical-align: top;
+}
+#companyCnt table th {
+	width: 80px;
+	background: #eee;
+	font-weight: bold;
+}
+#companyCnt table dt {
+	font-weight: bold;
+}
+
+
+
+

@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+/* font_meduim.css */
+
+/* fontstyle */
+body,td,th {
+	font-size:12px;
+	line-height:1.5;
+	font-family:"メイリオ","Meiryo","ヒラギノ角ゴ Pro w3","Hiragino Kaku Gothic Pro","Osaka","ＭＳ Ｐゴシック","MS P Gothic","Arial",sans-serif;
+}
+/* for IE */
+body {font-size:82%\9;}
+body th,body td {font-size:100%\9;}
+body:not(:target) {font-size:82%\9 !important;}
+body:not(:target) th {font-size:100%\9 !important;}
+body:not(:target) td {font-size:100%\9 !important;}
+* html body {font-size:82%;}
+* html body th {font-size:82% !important;}
+* html body td {font-size:82% !important;}
+*:first-child+html body {font-size:82%;}
+*:first-child+html body th {font-size:82%;}
+*:first-child+html body th {font-size:82%;}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+
+.contents_fontmenu_nav01 a {
+	background-position:0 0 !important;
+}
+.contents_fontmenu_nav02 a {
+	background-position:0 21px !important;
+}
+.contents_fontmenu_nav03 a {
+	background-position:0 0 !important;
+}
+
+.search_pagenav ul li small{
+	font-size:100%;
+	letter-spacing:-3px;
+}
+.search_pagenav ul li.first,
+.search_pagenav ul li.last{
+	*min-width:auto;
+	*width:85px;
+}
+.search_pagenav ul li.first a,
+.search_pagenav ul li.last a{
+	*width:85px;
+}

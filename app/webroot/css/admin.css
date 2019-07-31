@@ -1,0 +1,193 @@
+@charset "utf-8";
+
+/* admin.css */
+body {
+	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+
+label.col-label {
+	display: inline;
+}
+
+span.require-s {
+	margin-left: 10px;
+	margin-bottom: 5px
+}
+
+.alert_valid {
+	margin-top:10px;
+}
+
+.label-comment {
+	margin-top: 10px;
+}
+
+table.table-input th {
+	border: 1px solid #ddd;
+	background-color: #f9f9f9;
+	padding: 12px 0px;
+	width: 160px;
+	font-weight: normal;
+	height: 20px;
+	vertical-align: top;
+}
+
+table.table-input td {
+	border: 1px solid #ddd;
+	padding: 8px 20px;
+	height: 20px;
+	vertical-align: top;
+}
+
+table.table-striped {
+	width: auto;
+}
+
+table.table-striped th {
+	border: 1px solid #ddd;
+	text-align: center;
+}
+
+table.table-striped td {
+	border: 1px solid #ddd;
+}
+
+#map_canvas {
+	margin-top: 8px;
+}
+
+.pagination-centered {
+	text-align: left;
+}
+
+table.table-input td .alert {
+	margin-bottom: 0;
+}
+
+table.table-input .label-caption {
+	float: left;
+	width: 80px;
+	padding-top: 10px;
+	text-align: right;
+}
+
+table.table-input .controls-caption {
+	padding-top: 5px;
+	margin-left: 100px;
+}
+
+table.table-input .input-section {
+	margin-bottom: 8px;
+	padding-bottom: 8px;
+	border-bottom: 1px solid #ddd;
+	margin-left: -12px;
+	margin-right: -12px;
+	padding-left: 12px;
+	padding-right: 12px;
+}
+table.table-input .sub_input {
+	padding-top: 5px;
+}
+
+/* ログイン画面 */
+#admin-login {
+	text-align: center;
+}
+#admin-login .login-box {
+	margin: 0 auto;
+	width: 520px;
+	border: 1px solid #ddd;
+	-moz-box-shadow: 0px 0px 10px #ddd;
+	-webkit-box-shadow: 0px 0px 10px #ddd;
+	box-shadow: 0px 0px 10px #ddd;
+}
+#admin-login .legend {
+	display: block;
+	width: 100%;
+	padding: 0;
+	margin-bottom: 20px;
+	font-size: 21px;
+	line-height: 40px;
+	color: #333;
+	border: 0;
+	border-bottom: 1px solid #e5e5e5;
+	background: #f9f9f9; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZjZmNmYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkZGRkZGQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #f9f9f9 0%, #e5e5e5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f9f9f9 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f9f9f9 0%,#e5e5e5 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f9f9f9 0%,#e5e5e5 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f9f9f9 0%,#e5e5e5 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-8 */
+	text-align: center;
+	text-shadow: 1px 1px 2px #999;
+	letter-spacing: 0.1em;
+}
+#admin-login table {
+	margin: 0 auto;
+}
+#admin-login table th {
+	border: 1px solid #ddd;
+	background-color: #f9f9f9;
+	font-weight: normal;
+	padding: 8px 20px;
+}
+#admin-login table td {
+	border: 1px solid #ddd;
+	padding: 8px 20px;
+	vertical-align: middle;
+}
+#admin-login button {
+	margin-top: 30px;
+}
+
+/* 一覧の検索エリア */
+.search_table {
+	width:800px;
+	margin: 0 auto 20px auto;
+}
+.search_table th {
+	background-color: #F9F9F9;
+	width:150px;
+	text-align: center;
+	vertical-align: middle;
+}
+.search_btn_area {
+	margin: 0 auto 20px auto;
+}
+
+/* 一覧 各物件の子データ表示用ボタンのスタイル */
+.list_properties_form {
+	margin:0px;
+	display: inline;
+}
+
+.list_properties_btn {
+	border-bottom-right-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+/* 各タブ */
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover {
+	color: #0088CC;
+	cursor: pointer;
+}
+.nav-tabs > .active > a:hover {
+	background-color: #eeeeee;
+}
+
+
+p.build_text {
+	margin: 0;
+	padding-top: 7px;
+}
+
+/* 一覧用スタイル */
+.text_right {
+	text-align: right!important;
+}
+.text_center {
+	text-align: center!important;
+}

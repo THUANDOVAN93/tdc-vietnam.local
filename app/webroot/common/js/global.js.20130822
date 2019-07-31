@@ -1,0 +1,60 @@
+// global.js
+
+// scrollbar
+$(function(){
+	$('.scrollbar').jScrollPane();
+});
+
+// accordion
+$(document).ready(function(){
+/*
+	$('.search_nav_table').hide();
+	$('.search_nav .imgbtn').click(function() {
+		$(this).parent().next('.search_nav_table').slideToggle();
+		return false;
+	});
+*/
+});
+
+// rollover
+jQuery(document).ready(function($) {
+	var postfix = '_on';
+	$('.imgbtn img,#tab a img,#map-bangkok img').not('[src*="'+ postfix +'."]').each(function() {
+		var img = $(this);
+		var src = img.attr('src');
+		var src_on = src.substr(0, src.lastIndexOf('.'))
+			+ postfix
+			+ src.substring(src.lastIndexOf('.'));
+		$('<img>').attr('src', src_on);
+		img.hover(
+			function() {
+				img.attr('src', src_on);
+			},
+			function() {
+				img.attr('src', src);
+			}
+		);
+	});
+});
+
+// rollover input
+jQuery(document).ready(function($) {
+	var postfix = '_on';
+	$('.imgbtn input').not('[src*="'+ postfix +'."]').each(function() {
+		var input = $(this);
+		var src = input.attr('src');
+		var src_on = src.substr(0, src.lastIndexOf('.'))
+			+ postfix
+			+ src.substring(src.lastIndexOf('.'));
+		$('<input>').attr('src', src_on);
+		input.hover(
+			function() {
+				input.attr('src', src_on);
+			},
+			function() {
+				input.attr('src', src);
+			}
+		);
+	});
+});
+

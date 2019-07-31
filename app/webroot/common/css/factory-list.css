@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+/* factory-list.css
+------------------------------------------------ */
+#factory-list h3.ttl_hgroup {
+	font-size:1.5em;
+	font-weight:bold;
+	color:#fff !important;
+}
+#factory-list table {
+	width:100%;
+	margin: 30px 0;
+	border-bottom:1px dotted #b2b2b2;
+}
+#factory-list table td {
+	padding:8px 10px;
+	border-top:1px dotted #b2b2b2;
+	text-align:left;
+	vertical-align:top;
+}
+#factory-list table td.type,
+#factory-list table td.btn {
+	padding: 8px 0;
+}
+#factory-list table td.type {
+	width: 60px;
+}
+#factory-list table td.btn {
+	width: 85px;
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<markers>
+	<marker>
+		<lat>13.741286926</lat>
+		<lng>100.452665710</lng>
+		<name>物件0</name>
+		<icon>map_residence_icon2.png</icon>
+	</marker>
+	<marker>
+		<lat>13.740921020</lat>
+		<lng>100.498776855</lng>
+		<name>物件1</name>
+		<icon>map_residence_icon3.png</icon>
+	</marker>
+	<marker>
+		<lat>13.724225769</lat>
+		<lng>100.482181701</lng>
+		<name>物件2</name>
+		<icon>map_residence_icon3.png</icon>
+	</marker>
+</markers>

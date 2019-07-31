@@ -1,0 +1,72 @@
+/*
+	Theme Name: TDC News
+	Description: TDC News
+	Author: TDC
+	Version: 1.0
+*/
+
+@charset "utf-8";
+
+/* news
+----------------------------------------------- */
+#newsCnt h2 {
+	margin-bottom: 30px;
+	border-bottom: solid 2px #191919;
+}
+#newsCnt h3 {
+	padding: 10px 15px;
+	background: #000;
+	color: #fff;
+	font-size: 1.8em;
+	line-height: 1.2;
+}
+#newsCnt .link {
+	color: #fff;
+}
+#newsCnt .data {
+	padding:10px 15px;
+	background:url(../images/column_bg.png) repeat 0 0;
+	text-align: right;
+}
+#newsCnt .data dl {
+	float:right;
+	line-height: 1.2;
+}
+#newsCnt .data dt {
+	float:left;
+	padding-right:5px;
+}
+#newsCnt .data dt img {
+	vertical-align: middle
+}
+#newsCnt .data  dd {
+	float:left;
+}
+#newsCnt .article {
+	margin: 20px 0 60px;
+	line-height: 1.8;
+}
+#newsCnt .article p {
+	margin-bottom: 1em;
+}
+#newsCnt .wp-pagenavi {
+	line-height: 1.1;
+	text-align: center;
+}
+#newsCnt .wp-pagenavi span,
+#newsCnt .wp-pagenavi a {
+	padding: 5px 10px;
+	margin: 2px;
+}
+#newsCnt .wp-pagenavi span {
+	border: solid 1px #ccc;
+}
+#newsCnt .wp-pagenavi span.current {
+	background: #000;
+	color: #fff;
+	border: solid 1px #000;
+}
+#newsCnt .wp-pagenavi a {
+	background: #ccc;
+	border: solid 1px #ccc;
+}

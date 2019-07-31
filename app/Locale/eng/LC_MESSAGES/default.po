@@ -1,0 +1,357 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid "プロジェクト名"
+msgstr "Project name"
+
+msgid "フロント表示"
+msgstr "Display on front"
+
+msgid "区画種別"
+msgstr "Type"
+
+msgid "所在階"
+msgstr "Floor"
+
+msgid "床面積"
+msgstr "Floor area"
+
+msgid "工場面積"
+msgstr "Factory area"
+
+msgid "敷地面積"
+msgstr "Land area"
+
+msgid "価格"
+msgstr "Price"
+
+msgid "位置図"
+msgstr "Location map"
+
+msgid "間取り図"
+msgstr "Floor plan"
+
+msgid "間取り"
+msgstr "Floor plan"
+
+msgid "備考"
+msgstr "Remarks"
+
+msgid "更新頻度"
+msgstr "Update Frequecy"
+
+msgid "A：５日目からアラート"
+msgstr "5th day alert"
+
+msgid "B：１４日目からアラート"
+msgstr "14th day alert"
+
+msgid "C：２８日目からアラート"
+msgstr "28th day alert"
+
+msgid "表示優先度"
+msgstr "Display Priorty"
+
+msgid "1 (優先度：低) "
+msgstr "1 Low Priorty"
+
+msgid "3 (優先度：中)"
+msgstr "3 Medium Priorty"
+
+msgid "5 (優先度：高)"
+msgstr "5 High Priorty"
+
+msgid "表示"
+msgstr "Display"
+
+msgid "非表示"
+msgstr "Non Display"
+
+msgid "アパート・マンション"
+msgstr "Apartment"
+
+msgid "分譲マンション"
+msgstr "Condminium"
+
+msgid "サービスアパート"
+msgstr "Service Apartment"
+
+msgid "エリア"
+msgstr "Area"
+
+msgid "物件名"
+msgstr "Property name"
+
+msgid "住所"
+msgstr "Address"
+
+msgid "位置情報(緯度･経度)"
+msgstr "Location info (lattitude, longtitude)"
+
+msgid "位置情報"
+msgstr "Location info"
+
+msgid "緯度･経度"
+msgstr "lattitude, longtitude"
+
+msgid "住所から位置情報を設定する"
+msgstr "Set the location by address"
+
+msgid "最寄駅%d"
+msgstr "Nearest station %d"
+
+msgid "アクセス"
+msgstr "Access"
+
+msgid "完成年"
+msgstr "Completion Year"
+
+msgid "総階数"
+msgstr "Total floors"
+
+msgid "総部屋数"
+msgstr "Total rooms"
+
+msgid "部屋数"
+msgstr "Total rooms"
+
+msgid "物件説明"
+msgstr "property Description"
+
+msgid "周辺施設"
+msgstr "Neighbor facilities"
+
+msgid "アイコン"
+msgstr "Icon"
+
+msgid "駅近"
+msgstr "Stations nearby"
+
+msgid "おすすめ"
+msgstr "Recommended"
+
+msgid "人気"
+msgstr "Popular"
+
+msgid "新着"
+msgstr "New"
+
+msgid "TOP表示項目"
+msgstr "---"
+
+msgid "おすすめ"
+msgstr "Recommended"
+
+msgid "駅近"
+msgstr "Stations nearby"
+
+msgid "設備・特徴"
+msgstr "Facilities, Features"
+
+msgid "設備"
+msgstr "Facilities"
+
+msgid "特徴"
+msgstr "Features"
+
+msgid "アイコン"
+msgstr "Icon"
+
+msgid "プール"
+msgstr "Pool"
+
+msgid "ジム"
+msgstr "Gym"
+
+msgid "サウナ"
+msgstr "Sauna"
+
+msgid "テニスコート"
+msgstr "Tennis Court"
+
+msgid "子供の遊び場"
+msgstr "Playground"
+
+msgid "ランドリー"
+msgstr "Laundry"
+
+msgid "コンビニ"
+msgstr "Corner shop"
+
+msgid "キッチン"
+msgstr "Kitchen"
+
+msgid "洗濯機"
+msgstr "Washing machine"
+
+msgid "メイド部屋"
+msgstr "Maid room"
+
+msgid "ペット可"
+msgstr "Pets allowed"
+
+msgid "セキュリティ"
+msgstr "Security"
+
+msgid "駐車場"
+msgstr "Car parking space"
+
+msgid "インターネット"
+msgstr "Internet"
+
+msgid "衛星放送(UBC+NHK)"
+msgstr "CableTV"
+
+msgid "サービス"
+msgstr "Service"
+
+msgid "電気"
+msgstr "Electricity"
+
+msgid "水道"
+msgstr "Water"
+
+msgid "電話"
+msgstr "Telephone"
+
+msgid "コンロ"
+msgstr "Hobs"
+
+msgid "管理費"
+msgstr "Management fee"
+
+msgid "その他付帯設備"
+msgstr "Remarks"
+
+msgid "一覧用写真"
+msgstr "List screen photos"
+
+msgid "住居物件写真"
+msgstr "Residential property photos"
+
+msgid "詳細用写真(メイン) + TOP用"
+msgstr "Detail photos (main) + TOP run"
+
+msgid "詳細用写真(サブ大)"
+msgstr "Detail photos (sub - large)"
+
+msgid "詳細用写真(サブ小)"
+msgstr "Detail photos (sub - small)"
+
+msgid "物件ID"
+msgstr "Property ID"
+
+msgid "物件名"
+msgstr "Property name"
+
+msgid "物件種別"
+msgstr "Property type"
+
+msgid "エリア"
+msgstr "Area"
+
+msgid "住所"
+msgstr "Address"
+
+msgid "最寄駅"
+msgstr "Stations nearby"
+
+msgid "表示優先度"
+msgstr "Display Priorty"
+
+msgid "アイコン"
+msgstr "Icon"
+
+msgid "追加情報"
+msgstr "Additional information"
+
+msgid "検索"
+msgstr "Search"
+
+msgid "更新日"
+msgstr "Update date"
+
+msgid "操作"
+msgstr "Action"
+
+msgid "詳細用写真（メイン）＋TOP用"
+msgstr "Detail photos (main) + TOP run"
+
+msgid "詳細用写真（サブ大）"
+msgstr "Detail photos (sub - large)"
+
+msgid "詳細用写真（サブ小）"
+msgstr "Detail photos (sub - small)"
+
+# 任意追加
+msgid "削除"
+msgstr "Delete"
+
+msgid "編集"
+msgstr "Edit"
+
+msgid "追加"
+msgstr "Add"
+
+msgid "必須"
+msgstr "Require"
+
+msgid "保存"
+msgstr "Save"
+
+msgid "キャプション"
+msgstr "Caption"
+
+msgid "一覧"
+msgstr "List"
+
+msgid "全: %d件"
+msgstr "All %d"
+
+msgid "VND"
+msgstr "Dong"
+
+msgid "ホテル"
+msgstr "Hotel"
+
+msgid "銀行"
+msgstr "Bank"
+
+msgid "アパート"
+msgstr "Apartment"
+
+msgid "年"
+msgstr "Year"
+
+msgid "階"
+msgstr "Floor"
+
+msgid "室"
+msgstr "Room"
+
+msgid "住居物件名"
+msgstr "Property name"
+
+msgid "セキュリティー"
+msgstr "Security"
+
+msgid "プロット"
+msgstr "Plot"
+
+msgid "ユニット"
+msgstr "Unit"
+
+msgid "ヘクタール"
+msgstr "Hectare"

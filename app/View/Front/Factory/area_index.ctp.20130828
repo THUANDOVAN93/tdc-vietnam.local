@@ -1,0 +1,45 @@
+<script type="text/javascript" src="<?php echo $this->webroot; ?>common/js/areamap.js"></script>
+		
+		<!-- topicpath/ -->
+		<ul id="topicpath">
+			<li class="home"><a href="<?php echo $this->webroot; ?>">TOP</a></li>
+			<li>工場・工業用地を探す タイ全域工業団地から探す</li>
+		</ul>
+		<!-- /topicpath -->
+		
+		<!-- search_header/ -->
+		<div class="search_header clearfix">
+			<h2><img src="<?php echo $this->webroot; ?>common/images/search/factory_header_ttl.png" width="730" height="40" alt="タイ全域工業団地から探す" /></h2>
+		</div>
+		<!-- /search_header -->
+		
+		<!-- search_area/ -->
+		<p class="search_area_read">物件を検索したいエリアをクリックして下さい。</p>
+		<p id="map"><img src="<?php echo $this->webroot; ?>common/images/search/factory_index_map.png" alt="" width="730" height="710" border="0" usemap="#Map" />
+			<map name="Map" id="Map">
+				<area shape="rect" coords="40,83,181,115" href="<?php echo $this->webroot; ?>factory/area/list/1/" />
+				<area shape="rect" coords="40,133,181,165" href="<?php echo $this->webroot; ?>factory/area/list/2/" />
+				<area shape="rect" coords="40,203,181,235" href="<?php echo $this->webroot; ?>factory/area/list/3/" />
+				<area shape="rect" coords="40,253,181,285" href="<?php echo $this->webroot; ?>factory/area/list/4/" />
+				<area shape="rect" coords="40,296,181,328" href="<?php echo $this->webroot; ?>factory/area/list/5/" />
+				<area shape="rect" coords="40,346,181,378" href="<?php echo $this->webroot; ?>factory/area/list/6/" />
+				<area shape="rect" coords="40,396,181,428" href="<?php echo $this->webroot; ?>factory/area/list/7/" />
+				<area shape="rect" coords="40,446,181,478" href="<?php echo $this->webroot; ?>factory/area/list/8/" />
+				<area shape="rect" coords="40,496,181,528" href="<?php echo $this->webroot; ?>factory/area/list/9/" />
+				<area shape="rect" coords="457,33,598,65" href="<?php echo $this->webroot; ?>factory/area/list/10/" />
+				<area shape="rect" coords="457,83,598,115" href="<?php echo $this->webroot; ?>factory/area/list/11/" />
+				<area shape="rect" coords="510,211,691,243" href="<?php echo $this->webroot; ?>factory/area/list/12/" />
+				<area shape="rect" coords="550,261,691,293" href="<?php echo $this->webroot; ?>factory/area/list/13/" />
+				<area shape="rect" coords="500,311,641,343" href="<?php echo $this->webroot; ?>factory/area/list/14/" />
+				<area shape="rect" coords="500,362,641,393" href="<?php echo $this->webroot; ?>factory/area/list/15/" />
+				<area shape="rect" coords="353,496,494,528" href="<?php echo $this->webroot; ?>factory/area/list/16/" />
+				<area shape="rect" coords="353,546,494,578" href="<?php echo $this->webroot; ?>factory/area/list/17/" />
+				<area shape="rect" coords="511,416,712,691" href="#map-bangkok" />
+			</map>
+		</p>
+		<p id="map-bangkok"><img src="<?php echo $this->webroot; ?>common/images/search/factory_index_map02.png" alt="" /></p>
+		<!-- /search_area -->
+
+		<!-- contents_inquiry/ -->
+<?php echo $this->element('section_contact'); ?>
+		<!-- /contents_inquiry -->

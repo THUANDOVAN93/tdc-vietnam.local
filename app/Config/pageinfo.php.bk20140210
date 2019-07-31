@@ -1,0 +1,175 @@
+<?php
+
+// ページ情報
+Configure::write('Page.infolist', array(
+    'FrontTop' => array(
+        'index' => array(
+            'render'      => '/Top/index',
+            'title'       => 'タイ国内の住まい、事務所、工場のデータベース検索サイト(仮) | 東京デベロップメントコンサルタント',
+            'keywords'    => '',
+            'description' => '',
+        ),
+    ),
+    'FrontResidence' => array(
+        'area_index' => array(
+            'render'      => '/Residence/area_index',
+            'title'       => '住まいを探す エリアから探す | 東京デベロップメントコンサルタント',
+            'keywords'    => '',
+            'description' => '',
+        ),
+        'area_list' => array(
+            'render'      => '/Residence/area_list',
+            'title'       => '%sの物件一覧 | 住まいを探す エリアから探す | 東京デベロップメントコンサルタント',
+            'keywords'    => '',
+            'description' => '',
+        ),
+        'area_detail' => array(
+            'render'      => '/Residence/area_detail',
+            'title'       => '%sの物件情報 | 住まいを探す エリアから探す | 東京デベロップメントコンサルタント',
+            'keywords'    => '',
+            'description' => '',
+        ),
+        'station_index' => array(
+            'render'      => '/Residence/station_index',
+            'title'       => '住まいを探す 駅から探す | 東京デベロップメントコンサルタント',
+            'keywords'    => '',
+            'description' => '',
+        ),
+        'station_list' => array(
+            'render'      => '/Residence/station_list',
+            'title'       => '%sの物件一覧 | 住まいを探す 駅から探す | 東京デベロップメントコンサルタント',
+            'keywords'    => '',
+            'description' => '',
+        ),
+        'station_detail' => array(
+            'render'      => '/Residence/station_detail',
+            'title'       => '%sの物件情報 | 住まいを探す 駅から探す | 東京デベロップメントコンサルタント',
+            'keywords'    => '',
+            'description' => '',
+        ),
+    ),
+    'FrontOffice' => array(
+        'area_index' => array(
+            'render'      => '/Office/area_index',
+            'title'       => '事務所を探す エリアから探す | 東京デベロップメントコンサルタント',
+            'keywords'    => '',
+            'description' => '',
+        ),
+        'area_list' => array(
+            'render'      => '/Office/area_list',
+            'title'       => '%sの物件一覧 | 事務所を探す エリアから探す | 東京デベロップメントコンサルタント',
+            'keywords'    => '',
+            'description' => '',
+        ),
+        'area_detail' => array(
+            'render'      => '/Office/area_detail',
+            'title'       => '%sの物件情報 | 事務所を探す エリアから探す | 東京デベロップメントコンサルタント',
+            'keywords'    => '',
+            'description' => '',
+        ),
+        'station_index' => array(
+            'render'      => '/Office/station_index',
+            'title'       => '事務所を探す 駅から探す | 東京デベロップメントコンサルタント',
+            'keywords'    => '',
+            'description' => '',
+        ),
+        'station_list' => array(
+            'render'      => '/Office/station_list',
+            'title'       => '%sの物件一覧 | 事務所を探す 駅から探す | 東京デベロップメントコンサルタント',
+            'keywords'    => '',
+            'description' => '',
+        ),
+        'station_detail' => array(
+            'render'      => '/Office/station_detail',
+            'title'       => '%sの物件情報 | 事務所を探す 駅から探す | 東京デベロップメントコンサルタント',
+            'keywords'    => '',
+            'description' => '',
+        ),
+    ),
+    'FrontFactory' => array(
+        'area_index' => array(
+            'render'      => '/Factory/area_index',
+            'title'       => '工場・工業用地を探す タイ全域工業団地から探す | 東京デベロップメントコンサルタント',
+            'keywords'    => '',
+            'description' => '',
+        ),
+        'area_list' => array(
+            'render'      => '/Factory/area_list',
+            'title'       => '%sの物件一覧 | 工場・工業用地を探す タイ全域工業団地から探す | 東京デベロップメントコンサルタント',
+            'keywords'    => '',
+            'description' => '',
+        ),
+        'area_detail' => array(
+            'render'      => '/Factory/area_detail',
+            'title'       => '%sの物件情報 | 工場・工業用地を探す タイ全域工業団地から探す | 東京デベロップメントコンサルタント',
+            'keywords'    => '',
+            'description' => '',
+        ),
+    ),
+    'FrontContact' => array(
+        'residence_index' => array(
+            'render'      => '/Contact/Residence/index',
+            'title'       => '住まいのお問い合わせ(入力) | 東京デベロップメントコンサルタント',
+            'keywords'    => '',
+            'description' => '',
+        ),
+        'residence_confirm' => array(
+            'render'      => '/Contact/Residence/confirm',
+            'title'       => '住まいのお問い合わせ(確認) | 東京デベロップメントコンサルタント',
+            'keywords'    => '',
+            'description' => '',
+        ),
+        'residence_complete' => array(
+            'render'      => '/Contact/Residence/complete',
+            'title'       => '住まいのお問い合わせ(完了) | 東京デベロップメントコンサルタント',
+            'keywords'    => '',
+            'description' => '',
+        ),
+        'office_index' => array(
+            'render'      => '/Contact/Office/index',
+            'title'       => '事務所のお問い合わせ(入力) | 東京デベロップメントコンサルタント',
+            'keywords'    => '',
+            'description' => '',
+        ),
+        'office_confirm' => array(
+            'render'      => '/Contact/Office/confirm',
+            'title'       => '事務所のお問い合わせ(確認) | 東京デベロップメントコンサルタント',
+            'keywords'    => '',
+            'description' => '',
+        ),
+        'office_complete' => array(
+            'render'      => '/Contact/Office/complete',
+            'title'       => '事務所のお問い合わせ(完了) | 東京デベロップメントコンサルタント',
+            'keywords'    => '',
+            'description' => '',
+        ),
+        'factory_index' => array(
+            'render'      => '/Contact/Factory/index',
+            'title'       => '工場・工業用地のお問い合わせ(入力) | 東京デベロップメントコンサルタント',
+            'keywords'    => '',
+            'description' => '',
+        ),
+        'factory_confirm' => array(
+            'render'      => '/Contact/Factory/confirm',
+            'title'       => '工場・工業用地のお問い合わせ(確認) | 東京デベロップメントコンサルタント',
+            'keywords'    => '',
+            'description' => '',
+        ),
+        'factory_complete' => array(
+            'render'      => '/Contact/Factory/complete',
+            'title'       => '工場・工業用地のお問い合わせ(完了) | 東京デベロップメントコンサルタント',
+            'keywords'    => '',
+            'description' => '',
+        ),
+    ),
+
+    // Xmlなどに使うものなので以下の記述は下の方に記載したいです。
+    'FrontMap' => array(
+        'index' => array(
+            'render'      => '/Map/index',
+            'title'       => '',
+            'keywords'    => '',
+            'description' => '',
+        ),
+    ),
+));

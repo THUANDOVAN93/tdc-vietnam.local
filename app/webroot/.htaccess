@@ -1,0 +1,19 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    RewriteRule business/index.html$ /business/index.php [R=301,L]
+    RewriteRule business/interior-results01.html$ /business/interior-results01.php [R=301,L]
+    RewriteRule business/interior-results02.html$ /business/interior-results02.php [R=301,L]
+    RewriteRule business/interior-results03.html$ /business/interior-results03.php [R=301,L]
+    RewriteRule business/index.html$ /business/index.php [R=301,L]
+    RewriteRule business/interiors.html$ /business/interiors.php [R=301,L]
+    RewriteRule business/trade-ns.html$ /business/trade-ns.php [R=301,L]
+    RewriteRule business/trade-point.html$ /business/trade-point.php [R=301,L]
+    RewriteRule business/trade.html$ /business/trade.php [R=301,L]
+
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.*)$ index.php [QSA,L]
+    RewriteCond %{HTTPS} !on
+    RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+</IfModule>

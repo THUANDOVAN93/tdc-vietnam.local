@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+/* dowa.css */
+@import url(reset.css);
+@import url(global.css?ver=3);
+@import url(index.css?ver=3);
+@import url(detail.css);
+
+
+/* ===== print ===== */
+.print {
+	display:none !important;
+}
+@media print {
+/* print detail start */
+html {
+	overflow-y:auto;
+}
+body {
+	_zoom:0.8;
+}
+.print {
+	display:block !important;
+}
+.clearfix {
+	overflow:auto;
+	zoom:1;
+}
+.clearfix:not(:target) {
+	overflow:hidden\9;
+}
+.clearfix {
+	overflow:hidden\9;
+}
+/* print detail end */
+}   

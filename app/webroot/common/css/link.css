@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+/* company.css
+------------------------------------------------ */
+#linkCnt .list {
+	margin-top: 20px;
+}
+#linkCnt .list li {
+	padding: 0;
+	background: none;
+	border-bottom: dotted 1px #ddd;
+}
+#linkCnt .list a {
+	display: block;
+	padding: 8px 0 8px 20px;
+	background: url(../images/icon_arrow02.png) no-repeat 5px 16px;
+	text-decoration: none;
+	color: #333;
+}
+#linkCnt .list a:hover {
+	background: url(../images/icon_arrow02_on.png) no-repeat 5px 16px #eee;
+	color: #c00;
+}
+
+

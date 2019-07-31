@@ -1,0 +1,14 @@
+<div id="footer">
+	<div id="footer_inner">
+		<ul>
+			<li class="footer_nav02"><a href="<?php echo $this->webroot; ?>company/">会社情報</a></li>
+			<li class="footer_nav03"><a href="<?php echo $this->webroot; ?>recruit/">採用情報</a></li>
+			<!-- <li class="footer_nav04"><a href="link">Q&amp;A</a></li> -->
+			<li class="footer_nav05"><a href="<?php echo $this->webroot; ?>contact/">お問い合わせ</a></li>
+			<li class="footer_nav10"><a href="<?php echo $this->webroot; ?>link">リンク集</a></li>
+			<li class="footer_nav08"><a href="<?php echo $this->webroot; ?>privacy/">プライバシーポリシー</a></li>
+			<li class="footer_nav09"><a href="<?php echo $this->webroot; ?>sitemap/">サイトマップ</a></li>
+		</ul>
+		<p id="copyright">COPYRIGHT © TOKYO DEVELOPMENT CONSULTANTS THAILAND CO.,LTD. ALL RIGHTS RESERVED.</p>
+	</div>
+</div>
