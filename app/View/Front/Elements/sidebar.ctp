@@ -24,7 +24,7 @@
 
 		<!-- nav_global/ -->
 		<div id="nav_global">
-			<!-- <div id="nav_global_search" class="area_title">キーワードで探す</div>
+			 <div id="nav_global_search" class="area_title">キーワードで探す</div>
 			<div id="nav_global_search_box">
 				<form action="http://tdc-vietnam.com/search/" id="searchbox-tdc" class="search-box">
 					<input type="hidden" name="cx" value="008962594298774268058:gk11wb2hn-i" />
@@ -33,9 +33,9 @@
 					<input name="q" type="text" class="search-box-input" />
 					<input type="image" name="sa" src="/common/images/nav_global_search_btn.png" class="btn-image">
 				</form>
-<script type="text/javascript" src="http://www.google.com/cse/tools/onthefly?form=searchbox-tdc&amp;lang=ja"></script> -->
+<script type="text/javascript" src="http://www.google.com/cse/tools/onthefly?form=searchbox-tdc&amp;lang=ja"></script>
 
-<!--script>
+<script>
   (function() {
     var cx = '008962594298774268058:gk11wb2hn-i';
     //var cx = '008962594298774268058:5tmly2vr3og';
@@ -48,9 +48,9 @@
     s.parentNode.insertBefore(gcse, s);
   })();
 </script>
-<gcse:searchbox-only></gcse:searchbox-only-->
+<gcse:searchbox-only></gcse:searchbox-only>
 
-			<!-- </div> -->
+			</div>
 			<div id="nav_global_factory" class="area_title">工場・工業用地を探す</div>
 			<ul>
 				<li class="nav_global_factory01"><a href="<?php echo $this->webroot; ?>factory/area/">ベトナム全域の工業団地から探す</a></li>
