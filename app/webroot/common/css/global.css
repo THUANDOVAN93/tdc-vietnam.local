@@ -496,10 +496,9 @@ body {
 }
 #copyright {
 	clear:both;
-	height:12px;
-	background:url(../images/footer_copyright.png) repeat 0 0;
-	text-indent:-9999px;
-	line-height:12px;
+	color: #fff;
+	font-size: 8px;
+	text-align: center;
 }
 
 /* contents */

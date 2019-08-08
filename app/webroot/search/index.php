@@ -46,21 +46,23 @@
 </div><!-- / #linkCnt .main -->
 
 
-<script>
+<!-- <script>
   (function() {
-    var cx = '008962594298774268058:gk11wb2hn-i';
-    //var cx = '008962594298774268058:5tmly2vr3og';
+    var cx = '008006212690783945990:qjsguehu5dg';
     var gcse = document.createElement('script');
     gcse.type = 'text/javascript';
     gcse.async = true;
-    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+    // gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+    //     '//www.google.com/cse/cse.js?cx=' + cx;
+    gcse.src = 'https:' +
         '//www.google.com/cse/cse.js?cx=' + cx;
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(gcse, s);
   })();
 </script>
-<gcse:searchresults-only></gcse:searchresults-only>
-
+<gcse:searchresults-only></gcse:searchresults-only> -->
+<script async src="https://cse.google.com/cse.js?cx=008006212690783945990:gkvp5isnfww"></script>
+<div class="gcse-search"></div>
 
 </div>
 <!-- == /section_contents == -->

@@ -16,15 +16,15 @@
 		<div id="nav_global">
 			<div id="nav_global_search" class="area_title">キーワードで探す</div>
 			<div id="nav_global_search_box">
-				<form action="http://tdc-vietnam.com/search/" id="searchbox-tdc" class="search-box">
-					<input type="hidden" name="cx" value="008962594298774268058:gk11wb2hn-i" />
+				<form action="https://www.tdc-vietnam.com/search/" id="searchbox-tdc" class="search-box">
+					<input type="hidden" name="cx" value="008006212690783945990:qjsguehu5dg" />
 					<input type="hidden" name="ie" value="utf-8" />
 					<input type="hidden" name="hl" value="ja" />
 					<input name="q" type="text" value="<?php echo urldecode( $_REQUEST["q"] ); ?>" class="search-box-input" />
 					<input type="image" name="sa" src="/common/images/nav_global_search_btn.png" class="btn-image">
 				</form>
-<script type="text/javascript" src="http://www.google.com/cse/tools/onthefly?form=searchbox-tdc&amp;lang=ja"></script>
-
+<!-- <script type="text/javascript" src="https://www.google.com/cse/tools/onthefly?form=searchbox-tdc&amp;lang=ja"></script>
+ -->
 <!--script>
   (function() {
     var cx = '008962594298774268058:gk11wb2hn-i';

@@ -28,11 +28,11 @@
 			<!-- <li class="footer_nav10"><a href="/link">リンク集</a></li> -->
 </ul>
 <dl class="info">
-			<dt>Tokyo Development Consultants（Vietnam）Co.,Ltd.</dd>
+			<dt>TDC INTERNATIONAL (VIET NAM) COMPANY LIMITED.</dd>
 			<dd>Address: 602/43 Dien Bien Phu, Ward 22, Binh Thanh District, Ho Chi Minh City.</li>
 			<dd>Tel: +84 888 767 138 - Email: info@fact-link.com.vn</dd>
 </dl>
-<p id="copyright">COPYRIGHT © TOKYO DEVELOPMENT CONSULTANTS(VIETNAM)CO.,LTD. ALL RIGHTS RESERVED.</p>
+<p id="copyright">COPYRIGHT © TDC INTERNATIONAL (VIET NAM) COMPANY LIMITED ALL RIGHTS RESERVED.</p>
 	</div>
 </div>
 <!-- === /footer === -->

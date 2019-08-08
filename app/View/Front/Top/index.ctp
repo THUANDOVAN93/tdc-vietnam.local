@@ -1,8 +1,7 @@
 <script src="<?php echo $this->webroot; ?>common/js/jquery.index.tab.js" type="text/javascript" charset="UTF-8"></script>
 		<div class="index_section_main_discription">
-			東京デベロップメントコンサルタントベトナム(TDC）はベトナムでの工場・工業団地探しをお手伝いいたします。<br>
-			ご希望の条件（エリア、平米、用途、入居時期など）をお伝えいただければ適切な物件をご紹介いたしますので、<br>
-			お気軽にお電話またはメールでご連絡ください。
+			TDCベトナムはベトナムに進出を検討中の企業様のレンタル工場（貸し工場）・工場用地（購入）探しをお手伝いいたします。<br>
+			ご希望の条件（エリア、平米、用途、入居時期など）をお伝えいただければ適切な物件を無料でご紹介、コンサルティングいたしますので、お気軽にお電話またはメールでご連絡ください。日本人が丁寧に対応いたします。
 		</div>
 
 		<div class="index_section_main clearfix">

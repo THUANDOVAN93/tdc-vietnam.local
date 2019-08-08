@@ -48,7 +48,7 @@
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
 <th scope="row">社名</th>
-<td>Tokyo Development Consultants（Vietnam）Co.,Ltd.</td>
+<td>TDC INTERNATIONAL (VIET NAM) COMPANY LIMITED.</td>
 </tr>
 <tr>
 <th scope="row">代表取締役</th>
@@ -82,37 +82,20 @@ Ho Chi Minh City.
 <tr>
 <th scope="row">事業内容</th>
 <td>
+
 <dl>
-<dt>不動産部事業部</dt>
-<dd class="mb10">
-<ul class="list clearfix">
-<li>アパート マンション コンドミニアム</li>
-<li>事務所 店舗 ショールーム</li>
-<li>貸し工場 倉庫</li>
-<li>事務所用地の賃貸仲介</li>
-<li>土地 工業団地</li>
-<li>等の仲介業務及び管理業務</li>
-</ul>
-</dd>
 
-<dt>FACT-LINK事業部</dt>
-<dd class="mb10">
-<ul class="list clearfix">
-<li>ベトナム製造業ポータルサイトの運営</li>
-<li>ビジネスマッチング</li>
-<li>新規進出企業向け総合コンサルティング</li>
-</ul>
-</dd>
+	<dt>不動産部事業部</dt>
+	<dd class="mb10">
+	<ul class="list clearfix">
+	<li>貸し工場</li>
+	<li>倉庫</li>
+	<li>土地</li>
+	<li>工業団地</li>
+	</ul>
+	<span>等の仲介業務及び管理業務</span>
+	</dd>
 
-<dt>貿易事業部</dt>
-<dd>
-<ul class="list clearfix">
-<li>工業用洗浄システム（洗浄装置、洗浄液）の販売</li>
-<li>各種工業用化学薬品の販売</li>
-<li>土木建築用資材の輸出入販売</li>
-<li>工業用化学薬品を中心とした輸出入業務</li>
-</ul>
-</dd>
 </dl>
 </td>
 </tr>
@@ -164,7 +147,7 @@ function initializeAccessMap () {
 	});
 
 	var content = '<div id="infoWindow" style="width:250px;height:130px;">' +
-	'<h1 style="font-weight:bold;">Tokyo Development Consultants（Vietnam）Co.,Ltd.</h1>' +
+	'<h1 style="font-weight:bold;">TDC INTERNATIONAL (VIET NAM) COMPANY LIMITED.</h1>' +
 	'<p style="margin-top:10px;">602/43 Dien Bien Phu, Ward 22, Binh Thanh District, Ho Chi Minh City</p>' +
 	'</div>';
 	var infowindow = new google.maps.InfoWindow({
