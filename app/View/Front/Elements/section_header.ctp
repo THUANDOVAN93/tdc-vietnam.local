@@ -16,6 +16,7 @@
 				</dd>
 			</dl>
 		</div>
+		<p class="text-right mg-x-10"><a href="https://factory-vn.com">ENGLSIH</a></p>
 		<!-- /contents_header -->
 
 		<!-- contents_header_inquiry/ -->

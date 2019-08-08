@@ -507,7 +507,6 @@ body {
 .contents_header {
 	overflow:hidden;
 	_zoom:1;
-	height:40px;
 	padding:3px 0 0;
 }
 .contents_header a {
@@ -841,4 +840,12 @@ li.contents_fontmenu_nav03 a {
 
 .cse .gs-result .gs-snippet, .gs-result .gs-snippet, .cse .gs-spelling-original, .gs-spelling-original{
 	font-size:11px !important;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.mg-x-10 {
+	margin: 10px auto;
 }
