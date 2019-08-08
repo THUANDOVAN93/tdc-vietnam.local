@@ -849,3 +849,30 @@ li.contents_fontmenu_nav03 a {
 .mg-x-10 {
 	margin: 10px auto;
 }
+
+.arrow-right:before {
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+	border-left: 4px solid #000;
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 0;
+}
+
+.arrow-right {
+	display: inline-flex;
+	align-items: center;
+	position: relative;
+	padding: 0 30px 0 10px;
+}
+
+.flag-en:after {
+	content: "";
+	position: absolute;
+	width: 20px;
+	height: 12px;
+	right: 0;
+	background-image: url("/common/images/icon/flag-en.png");
+}

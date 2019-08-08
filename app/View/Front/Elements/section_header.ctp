@@ -1,22 +1,6 @@
 
 		<!-- contents_header/ -->
-		<div class="contents_header">
-			<ul class="contents_nav">
-				<li class="contents_nav01"><a href="<?php echo $this->webroot; ?>">TOP</a></li>
-				<li class="contents_nav02"><a href="<?php echo $this->webroot; ?>company/?#access">ACCESS</a></li>
-			</ul>
-			<dl class="contents_fontmenu">
-				<dt>文字サイズ</dt>
-				<dd>
-					<ul>
-						<li class="contents_fontmenu_nav01"><a href="javascript:void(0);" onclick="setActiveStyleSheet('small'); return false;" onkeypress="setActiveStyleSheet('small'); return false;">小</a></li>
-						<li class="contents_fontmenu_nav02"><a href="javascript:void(0);" onclick="setActiveStyleSheet('medium'); return false;" onkeypress="setActiveStyleSheet('medium'); return false;">中</a></li>
-						<li class="contents_fontmenu_nav03"><a href="javascript:void(0);" onclick="setActiveStyleSheet('large'); return false;" onkeypress="setActiveStyleSheet('large'); return false;">大</a></li>
-					</ul>
-				</dd>
-			</dl>
-		</div>
-		<p class="text-right mg-x-10"><a href="https://factory-vn.com">ENGLSIH</a></p>
+		<p class="text-right mg-x-10"><a class="arrow-right flag-en" href="https://factory-vn.com">ENGLISH</a></p>
 		<!-- /contents_header -->
 
 		<!-- contents_header_inquiry/ -->
