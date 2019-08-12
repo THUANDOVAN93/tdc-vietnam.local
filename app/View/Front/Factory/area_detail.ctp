@@ -71,6 +71,7 @@
 			</div>
 		</div>
 		<!-- /detail_read -->
+		<div style="margin: 20px 10px;">ABC</div>
 
 		<!-- detail_read_detail/ -->
 		<div class="detail_article_read_detail clearfix" style="overflow: hidden;">

@@ -24,6 +24,7 @@ Configure::write('debug', 0);
 Cache::config('default', array('engine' => 'File'));
 
 CakePlugin::loadAll();
+CakePlugin::load('Wysiwyg');
 
 Configure::write('Dispatcher.filters', array(
 	'AssetDispatcher',

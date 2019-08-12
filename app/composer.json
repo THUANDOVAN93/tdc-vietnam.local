@@ -1,0 +1,12 @@
+{
+    "name": "root/app",
+    "authors": [
+        {
+            "name": "thuandovan93",
+            "email": "thuandovan93@gmail.com"
+        }
+    ],
+    "require": {
+            "josegonzalez/cakephp-wysiwyg": "dev-master"
+	}
+}

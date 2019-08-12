@@ -22,6 +22,17 @@
 <?php } ?>
 					</td>
 				</tr>
+
+				<tr>
+					<th><?php __h('Factory area description'); ?><span class="label label-important"></span></th>
+					<td><?php echo $this->Wysiwyg->textarea('FactoryArea.note'); ?>
+<?php $err = isset($validErrors['name'][0]);?>
+<?php if ($err) { ?>
+					<p class="alert alert-error alert_valid">※<?php __h($validErrors['note'][0]); ?></p>
+<?php } ?>
+					</td>
+				</tr>
+				
 				<tr>
 					<th><?php __h('位置情報取得用住所'); ?></th>
 					<td>

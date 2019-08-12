@@ -16,7 +16,15 @@ class FactoryAreasController extends AdminController {
     public $paginate = array(
         'sort' => 'id'
     );
-
+/**
+ * CK Editor
+ *
+ * @var array
+ */
+    public $helpers = array(
+        'Wysiwyg.Wysiwyg' => array(
+            '_editor' => 'Ck'
+    ));
 /**
  * Uses
  *

@@ -21,6 +21,10 @@
 		<!-- search_list/ -->
 		<h3 class="search_list_ttl"><?php echo h($factoryArea['FactoryArea']['name']); ?>の物件一覧</h3>
 
+		<!-- factory description/ -->
+		<div style="margin: 20px 10px;">
+		<?php echo html_entity_decode($factoryArea['FactoryArea']['note']); ?>
+		</div>
 		<!-- search_list_map_nav/ -->
 		<div id="map_canvas" class="search_list_map"></div>
 		<?php echo $this->Form->hidden('lat', array('id'=>'map_lat', 'value'=>$factoryArea['FactoryArea']['lat'])); ?>
