@@ -92,6 +92,15 @@
 <?php } ?>
 					</td>
 				</tr>
+				<tr>
+					<th><?php __h('Project description'); ?><span class="label"></span></th>
+					<td><?php echo $this->Wysiwyg->textarea('FactoryBuilding.note'); ?>
+<?php $err = isset($validErrors['name'][0]);?>
+<?php if ($err) { ?>
+					<p class="alert alert-error alert_valid">※<?php __h($validErrors['FactoryBuilding']['note'][0]); ?></p>
+<?php } ?>
+					</td>
+				</tr>
 				<!--tr>
 					<th><?php __h('BOIゾーン'); ?><span class="label label-important require-s"><?php __h('必須'); ?></span></th>
 					<td>

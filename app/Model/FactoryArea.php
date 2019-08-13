@@ -33,6 +33,14 @@ class FactoryArea extends AppModel {
                 'last'     => true,
             ),
         ),
+        'note' => array(
+            'maxlength' => array(
+                'rule'     => array('maxlength', 1000),
+                'message'  => 'Enter the factory area description within 1000 characters.',
+                'required' => true,
+                'last'     => true,
+            ),
+        ),
         'address' => array(
             'maxLength' => array(
                 'rule' => array('maxLength', '512'),

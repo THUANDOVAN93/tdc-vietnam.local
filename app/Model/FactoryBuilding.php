@@ -77,6 +77,14 @@ class FactoryBuilding extends AppModel {
                 'last' => true,
             ),
         ),
+        'note' => array(
+            'maxlength' => array(
+                'rule'     => array('maxlength', 1000),
+                'message'  => 'Enter the project description within 1000 characters.',
+                'required' => true,
+                'last'     => true,
+            ),
+        ),
         /*'boi_zone' => array(
             'notempty' => array(
                 'rule' => array('notempty'),

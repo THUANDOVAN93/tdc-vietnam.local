@@ -21,7 +21,15 @@ class FactoryBuildingsController extends AdminController {
     public $paginate = array(
         'order' => 'FactoryBuilding.modified DESC'
     );
-
+/**
+* CK Editor
+*
+* @var array
+*/
+    public $helpers = array(
+        'Wysiwyg.Wysiwyg' => array(
+        '_editor' => 'Ck'
+    ));
 /**
  * beforeFilter
  *
