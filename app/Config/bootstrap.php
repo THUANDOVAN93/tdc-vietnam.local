@@ -19,7 +19,7 @@ App::build(array(
 //    'Console/Command' => array('/full/path/to/shells/', '/next/full/path/to/shells/'),
 //    'locales' => array('/full/path/to/locale/', '/next/full/path/to/locale/')
 ), App::RESET);
-Configure::write('debug', 0);
+Configure::write('debug', 2);
 
 Cache::config('default', array('engine' => 'File'));
 

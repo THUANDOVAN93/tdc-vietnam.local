@@ -876,3 +876,51 @@ li.contents_fontmenu_nav03 a {
 	right: 0;
 	background-image: url("/common/images/icon/flag-en.png");
 }
+
+a:hover {
+	text-decoration: none;
+}
+
+.parent,
+.child li {
+	padding: 4px;
+}
+
+.parent.active {
+	background-color: #98c28a;
+}
+
+.child {
+	padding: 10px;
+}
+
+.parent a,
+.child a {
+	display: block;
+}
+
+.parent:hover,
+.child li:hover {
+	background-color: #c4c485;
+}
+
+.parent:hover ul.child {
+	display: block;
+	z-index:99999999;
+}
+
+.child {
+	display: none;
+	position: absolute;
+	left: 100%;
+	top: 0;
+	width: 300px;
+	height: 100%;
+	overflow-y: scroll;
+	background-color: #ccc;
+}
+
+.province {
+	background-color: #ccc;
+	padding: 4px;
+}

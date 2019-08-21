@@ -19,6 +19,10 @@ class FrontFactoryController extends FrontController {
 
     // 工場・工業用地を探す エリアから探す
     public function area_index() {
+        // Add Left Menu (Edit By Thuando)
+        $factoryAreas = $this->FactoryArea->find('all');
+        $this->set('factoryAreas', $factoryAreas);
+
         $this->PageRender->render('area_index');
     }
     // 工場・工業用地を探す 北部エリアから探す
@@ -237,6 +241,11 @@ class FrontFactoryController extends FrontController {
 
         $this->set(compact('factoryCategories', 'factorySubCategories', 'factoryTenants', 'industrialParks'));
 
+        // Add Left Menu (Edit By Thuando)
+        $factoryAreas = $this->FactoryArea->find('all');
+        $this->set('factoryAreas', $factoryAreas);
+        $this->set('factoryAreaCurrentId', $factoryAreaId);
+
         //画面表示
         Configure::write('Page.infolist.FrontFactory.area_list.title', sprintf(Configure::read('Page.infolist.FrontFactory.area_list.title'), $factoryArea['FactoryArea']['name']));
         $this->PageRender->render('area_list');
@@ -338,6 +347,13 @@ class FrontFactoryController extends FrontController {
 
         //詳細リンク
         $this->set('detailLink', 'factory/'.$id);
+
+        // Add Left Menu (Edit By Thuando)
+        $factoryAreas = $this->FactoryArea->find('all');
+        $this->set('factoryAreas', $factoryAreas);
+
+        $factoryAreaCurrent = $this->FactoryArea->find();
+        $this->set('factoryAreaCurrentId', $factoryBuilding['FactoryBuilding']['factory_area_id']);
 
         //画面表示
         Configure::write('Page.infolist.FrontFactory.area_detail.title', sprintf(Configure::read('Page.infolist.FrontFactory.area_detail.title'), $factoryBuilding['FactoryBuilding']['name']));

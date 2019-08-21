@@ -13,6 +13,14 @@ class FactoryArea extends AppModel {
  */
     public $displayField = 'name';
 
+    public $hasMany = array(
+        'FactoryBuildingOfArea' => array(
+            'className'     => 'FactoryBuilding',
+            'foreignkey'    => 'factory_area_id',
+            'dependent'     => true
+        )
+    );
+
 /**
  * Validation rules
  *

@@ -9,6 +9,7 @@ class FrontTopController extends FrontController {
         'OfficeBuilding',
         'FactoryBuilding',
         'AddInformation',
+        'FactoryArea',
     );
 
     // TOPページ
@@ -56,6 +57,10 @@ class FrontTopController extends FrontController {
             }
             $factoryBuildings['add_information' . $addInfoId] = $this->FactoryBuilding->getTopIconList('add_information' .$addInfoId , $size);
         }
+
+        // Add Left Menu (Edit By Thuando)
+        $factoryAreas = $this->FactoryArea->find('all');
+        $this->set('factoryAreas', $factoryAreas);
 
         $this->set(compact(
             'residenceBuildings',
