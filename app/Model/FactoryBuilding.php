@@ -18,6 +18,25 @@ class FactoryBuilding extends AppModel {
     public $displayField = 'name';
 
 /**
+ * Translate
+ *
+ * @var string
+ */
+    public $actsAs = array(
+        'Translate' => array(
+            'name' => 'nameTranslation',
+            'note' => 'noteTranslation',
+            'highway' => 'highwayTranslation',
+            'sewer' => 'sewerTranslation',
+            'waterworks' => 'waterworksTranslation',
+            'reservoir' => 'reservoirTranslation',
+            'reservoir' => 'reservoirTranslation',
+            'electricity' => 'electricityTranslation',
+            'security' => 'securityTranslation'
+        )
+    );
+
+/**
  * Validation rules
  *
  * @var array

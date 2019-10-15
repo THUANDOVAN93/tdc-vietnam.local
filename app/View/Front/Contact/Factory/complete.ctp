@@ -1,18 +1,23 @@
 		<!-- topicpath/ -->
 		<ul id="topicpath">
 			<li class="home"><a href="<?php echo $this->webroot; ?>">TOP</a></li>
-			<li>お問い合わせ</li>
+			<li><?php echo __('contact'); ?></li>
 		</ul>
 		<!-- /topicpath -->
 		
 		<div id="contactCnt">
-			<h2><img src="<?php echo $this->webroot; ?>common/images/contact/header_ttl.png" width="730" height="40" alt="お問い合わせ" /></h2>
+			<h2 class="contact-title"><?php echo __('inquiry-form'); ?></h2>
 			<p class="thanksTxt">
-				このたびはお問い合わせいただき、<br />
-				誠にありがとうございます。<br />
-				担当者より追ってご連絡いたしますので、<br />
-				しばらくお待ち下さいませ。
+				<?php
+					echo __('contact-thank-text-1');
+					echo '<br/>';
+					echo __('contact-thank-text-2');
+					echo '<br/>';
+					echo __('contact-thank-text-3');
+					echo '<br/>';
+					echo __('contact-thank-text-4');
+				?>
 			</p>
-			<p id="home"><a href="<?php echo $this->webroot; ?>">トップページに戻る</a></p>
+			<p id="home"><a href="<?php echo $this->webroot; ?>"><?php echo __('back-to-top'); ?></a></p>
 		</div>
 		<!-- / #contactCnt -->

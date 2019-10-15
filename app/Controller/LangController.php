@@ -6,6 +6,8 @@
  * @property AuthComponent $Auth
  * @property SessionComponent $Session
  */
+
+
 class LangController extends AppController {
 
     public $components = array('Session');
@@ -13,8 +15,14 @@ class LangController extends AppController {
     public $autoRender = false;
 
 
-    public function index($lang = 'en') {
-        $this->Session->write('lang',$lang);
-        echo $lang;
+    public function index() {
+        if ($this->Session->check('Config.language')) {
+            Configure::write('Config.language', $this->Session->read('Config.language'));
+        }
+        if (isset($this->params['language']) && $this->params['language'] != $this->Session->read('Config.language')) {
+            Configure::write('Config.language', $this->params['language']);
+            $this->Session->write('Config.language', $this->params['language']);
+        }
+        return $this->redirect($this->referer());
     }
 }

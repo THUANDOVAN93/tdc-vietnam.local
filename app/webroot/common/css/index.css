@@ -6,6 +6,7 @@
 .index_section_main_discription{
 	font-weight: bold;
 	margin-bottom: 20px;
+	margin-top: 20px;
 	font-size: 14px;
 }
 .index_main_full{
@@ -55,7 +56,6 @@
 }
 
 .index_detail_nav {
-	overflow:hidden;
 	position:relative;
 	z-index:5;
 }
@@ -69,7 +69,6 @@
 .index_section_detail {
 	border:1px solid #7f7f7f;
 	padding:10px 12px 25px;
-	position:relative;
 	top:-8px;
 	right:0;
 }

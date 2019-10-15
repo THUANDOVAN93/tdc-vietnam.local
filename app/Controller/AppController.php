@@ -41,14 +41,19 @@ class AppController extends Controller {
 
     public $helpers = array(
         'Session',
-        'Html',// => array('className' => 'TwitterBootstrap.BootstrapHtml'),
+        'Html',
         'Form',// => array('className' => 'TwitterBootstrap.BootstrapForm'),
         'Paginator' => array('className' => 'TwitterBootstrap.BootstrapPaginator'),
     );
 
     public function beforeFilter(){
-        $lang = $this->Session->read('lang') ? $this->Session->read('lang') : 'en';
-        Configure::write('Config.language', $lang);
-    }
 
+        if ($this->Session->check('Config.language')) {
+            Configure::write('Config.language', $this->Session->read('Config.language'));
+        }
+        if (isset($this->params['language']) && $this->params['language'] != $this->Session->read('Config.language')) {
+            Configure::write('Config.language', $this->params['language']);
+            $this->Session->write('Config.language', $this->params['language']);
+        }
+    }
 }

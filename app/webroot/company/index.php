@@ -20,7 +20,7 @@
 	<script type="text/javascript" src="../common/js/jquery.jscrollpane.min.js"></script>
 	<script type="text/javascript" src="../common/js/styleswitcher.js"></script>
 	<script type="text/javascript" src="../common/js/global.js"></script>
-	<script src="http://maps.google.com/maps/api/js?key=AIzaSyDRe-SLe-oVJhmp1x0wDGUdtVOmFceE8eU&v=quarterly&v=3"></script>
+	<script src="https://maps.google.com/maps/api/js?key=AIzaSyDRe-SLe-oVJhmp1x0wDGUdtVOmFceE8eU&v=quarterly&v=3"></script>
 	<title>会社情報｜東京デベロップメントコンサルタント</title>
 	<script type="text/javascript" src="../common/js/ga.js"></script>
 </head>
@@ -88,10 +88,8 @@ Ho Chi Minh City.
 	<dt>不動産部事業部</dt>
 	<dd class="mb10">
 	<ul class="list clearfix">
-	<li>貸し工場</li>
-	<li>倉庫</li>
-	<li>土地</li>
-	<li>工業団地</li>
+	<li>貸し工場 倉庫</li>
+	<li>土地 工業団地</li>
 	</ul>
 	<span>等の仲介業務及び管理業務</span>
 	</dd>

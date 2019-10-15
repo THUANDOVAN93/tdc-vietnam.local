@@ -14,7 +14,16 @@ class FactoryProperty extends AppModel {
  * @var string
  */
     public $displayField = 'factory_building_id';
-
+/**
+ * Translate
+ *
+ * @var string
+ */
+    public $actsAs = array(
+        'Translate' => array(
+            'note' => 'noteTranslation',
+        )
+    );
 /**
  * Validation rules
  *

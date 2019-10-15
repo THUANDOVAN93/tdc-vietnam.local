@@ -9,10 +9,6 @@
 	float:left;
 	width:410px;
 }
-.search_header h1 {/*SEO対応*/
-	float:left;
-	width:410px;
-}
 
 .search_header ul {
 	float:right;
@@ -400,35 +396,35 @@ div.search_area_other ul li {
 	background:url(../images/column_bg.png) repeat 0 0;
 }
 .search_list_map_nav {
+	display: flex;
 	border:2px solid #1b1b1b;
 }
 .search_list_map_nav dt {
-	float:left;
-	width:68px;
-	background-color:#1b1b1b;
+	background-color: #1b1b1b;
+	color: #fff;
+	font-size: 18px;
+	padding: 0 20px;
 }
 .search_list_map_nav dd {
 	float:left;
 }
 .search_list_map_nav dd ul {
-	margin-left:-5px;
-	padding:8px 0 0 0;
+	padding:4px 0;
 }
 .search_list_map_nav dd li {
-	float:left;
-	padding-left:12px;
-	line-height:29px;
+	padding-left: 12px;
+	height: 28px;
 }
 .search_list_map_nav dd li img {
 	vertical-align:middle;
 	padding-left:3px;
 }
 .search_list_map_nav dd li label {
-	float:left;
-	display:block;
-	padding-left:32px;
-	background-repeat:no-repeat;
-	background-position:0 50%;
+	display: flex;
+	align-items: center;
+	padding-left: 32px;
+	background-repeat: no-repeat;
+	background-position: 0 50%;
 }
 .search_list_map_nav01 label {
 	background-image:url(../images/search/list_map_nav_icon01.png);
@@ -466,6 +462,7 @@ div.search_area_other ul li {
 .search_list_map_nav dd li input {
 	font-size:20px;
 	vertical-align:middle;
+	margin-right: 5px;
 }
 
 /* search_nav */
@@ -574,6 +571,11 @@ div.search_area_other ul li {
 .search_pagenav dt {
 	float:left;
 	width:60px;
+	height: 21px;
+	line-height: 21px;
+	background: #000;
+	color: #fff;
+	text-align: center;
 }
 .search_pagenav dd {
 	float:left;
@@ -770,12 +772,14 @@ div.search_area_other ul li {
 }
 .search_column_section ul {
 	width:466px;
+	display: flex;
+	flex-wrap: wrap;
 }
 .search_column_section li {
 	float:left;
-	width:110px;
 	margin-right:6px;
 	margin-bottom:6px;
+	line-height: 18px;
 }
 .search_column_section p.imgbtn {
 	margin-top:20px;
@@ -784,6 +788,23 @@ div.search_area_other ul li {
 
 
 /* detail */
+.search_column_type .type-item {
+	width: 110px;
+	background: #fbf7ef;
+	box-sizing: border-box;
+	text-align: center;
+	margin-right: 6px;
+	margin-bottom: 6px;
+	line-height: 18px;
+	font-size: 10px;
+}
+.search_column_type .type-item.on {
+	border: 1px solid #f7ab00;
+}
+.search_column_type .type-item.off {
+    border: 1px solid #c4bfbf;
+    opacity: 0.7;
+}
 .box_share {
 	text-align:right;
 }
@@ -815,6 +836,7 @@ div.search_area_other ul li {
 	font-size:1.3em;
 	font-weight:bold;
 	color:#fff;
+	text-transform: uppercase;
 }
 
 /* detail_header */
@@ -942,8 +964,8 @@ p.detail_read_txt {
 }
 .detail_read_section table th span {
 	display: block;
-	color: #666;
-	font-size: 10px;
+	color: #000;
+	font-size: 12px;
 	font-family: Verdana, Geneva, sans-serif;
 	font-weight: normal;
 }
@@ -959,8 +981,7 @@ p.detail_read_txt {
 	padding:15px 0 10px 0;
 }
 .detail_article_feature li {
-	float:left;
-	padding:0 10px 10px 0;
+	padding: 5px;
 }
 .detail_article_feature table {
 	width:100%;
@@ -977,8 +998,8 @@ p.detail_read_txt {
 }
 .detail_article_feature table th span {
 	display: block;
-	color: #666;
-	font-size: 10px;
+	color: #000;
+	font-size: 12px;
 	font-family: Verdana, Geneva, sans-serif;
 	font-weight: normal;
 }
@@ -1260,13 +1281,12 @@ p.detail_read_txt {
 }
 #contactCnt th .must {
 	display: block;
+	background-color: #CC0000;
+	border-radius: 2px;
+	color: #fff;
 	float: right;
-	width: 30px;
-	height: 16px;
-	margin-right: 5px;
-	background: url(../images/contact/icon_must.png) no-repeat top left;
-	text-indent: -9999px;
-	line-height: 0;
+	font-size: 12px;
+	padding: 5px 10px;
 }
 #contactCnt .fl {
 	float: left;
@@ -1276,53 +1296,55 @@ p.detail_read_txt {
 }
 
 /* btn */
+#contactCnt #btn.normal-form {
+	width: auto;
+	margin: 20px 0 20px 0;
+	text-align: center;
+	font-size: 0;
+	padding-left: 184px;
+	text-align: left;
+}
 #contactCnt #btn {
 	width: 400px;
 	margin: 30px 185px 0;
-	height: 45px;
 	text-align: center;
-	line-height: 0;
 }
 #contactCnt #btn a {
+	background-color: #000;
+	color: #fff;
 	display: block;
-	width: 180px;
-	height: 45px;
-	border: none;
-	background: none;
-	background-position: top left;
-	text-indent: -9999px;
+	font-weight: bold;
+	font-size: 14px;
+	/*width: 160px;*/
+	min-width: 160px;
+	padding: 15px;
+	text-align: center;
 }
 #contactCnt #btn a:hover {
-	background-position: left bottom;
+	background-color: #CC0000;
 }
 #contactCnt #btn #confirm {
-	background-image: url(../images/contact/btn_confirm.png);
 }
 #contactCnt #btn #reset {
-	background-image: url(../images/contact/btn_reset.png);
 }
 #contactCnt #btn #submit {
-	background-image: url(../images/contact/btn_submit.png);
 }
 #contactCnt #btn #back {
-	background-image: url(../images/contact/btn_back.png);
 }
+
 #contactCnt #home {
-	width: 200px;
-	height: 45px;
-	margin-top: 40px;
-	margin-left: 265px;
-	background: url(../images/contact/btn_home.png) no-repeat left bottom;
+	text-align: center;
+	margin-top: 20px;
 }
 #contactCnt #home a {
-	display: block;
-	background: url(../images/contact/btn_home.png) no-repeat top left;
-	width: 200px;
-	height: 45px;
-	text-indent: -9999px;
+	display: inline-block;
+	background-color: #000;
+	color: #fff;
+	padding: 12px 20px;
+	font-size: 16px;
 }
 #contactCnt #home a:hover {
-	background: none;
+	background-color: #CC0000;
 }
 .no_data{
 	border:3px solid #dedede;

@@ -1,20 +1,20 @@
-<script src="http://maps.google.com/maps/api/js?v=3&sensor=false" type="text/javascript" charset="UTF-8"></script>
+<script src="https://maps.google.com/maps/api/js?key=AIzaSyDRe-SLe-oVJhmp1x0wDGUdtVOmFceE8eU&v=quarterly&v=3" type="text/javascript" charset="UTF-8"></script>
 <?php echo $this->Html->script('jquery.map'); ?>
 
 <div class="container">
-	<h2><?php __h('工場物件管理'); ?></h2>
+	<h2><?php __h('factory-property-management'); ?></h2>
 	<ul class="nav nav-tabs">
-		<li><a href="<?php echo $this->webroot; ?>admin/factory_buildings"><?php __h('工場物件一覧'); ?></a></li>
-		<li><a href="<?php echo $this->webroot; ?>admin/factory_buildings/add"><?php __h('工場物件の追加'); ?></a></li>
-		<li class="active"><a><?php __h('工場物件の編集'); ?></a></li>
+		<li><a href="<?php echo $this->webroot; ?>admin/factory_buildings"><?php __h('factory-property-list'); ?></a></li>
+		<li><a href="<?php echo $this->webroot; ?>admin/factory_buildings/add"><?php __h('add-factory-property'); ?></a></li>
+		<li class="active"><a><?php __h('edit-factory-properties'); ?></a></li>
 	</ul>
 	<?php echo $this->Form->create('FactoryBuilding', array('enctype' => 'multipart/form-data', 'class' => 'form-horizontal')); ?>
 		<?php echo $this->Form->hidden('id'); ?>
 		<fieldset>
-			<legend style="margin-bottom: 5px;"><?php __h('物件管理'); ?></legend>
+			<legend style="margin-bottom: 5px;"><?php __h('property-management'); ?></legend>
 			<table class="table-input">
 				<tr>
-					<th><?php __h('更新頻度'); ?><span class="label label-important require-s"><?php __h('必須'); ?></span></th>
+					<th><?php __h('update-frequency'); ?><span class="label label-important require-s"><?php __h('required'); ?></span></th>
 					<td>
 <?php
   $radioValues = array();
@@ -32,7 +32,7 @@
 					</td>
 				</tr>
 				<tr>
-					<th><?php __h('表示優先度'); ?><span class="label label-important require-s"><?php __h('必須'); ?></span></th>
+					<th><?php __h('display-priority'); ?><span class="label label-important require-s"><?php __h('required'); ?></span></th>
 					<td>
 						<?php echo $this->Form->select('priority', __arrTranslate(Configure::read('Priority')), array('empty'=>false)); ?>
 <?php $err = isset($validErrors['FactoryBuilding']['priority'][0]);?>
@@ -42,7 +42,7 @@
 					</td>
 				</tr>
 				<tr>
-					<th><?php __h('フロント表示'); ?><span class="label label-important require-s"><?php __h('必須'); ?></span></th>
+					<th><?php __h('front-display'); ?><span class="label label-important require-s"><?php __h('required'); ?></span></th>
 					<td>
 						<?php echo $this->Form->select('visible', __arrTranslate(Configure::read('Visible')), array('empty'=>false)); ?>
 <?php $err = isset($validErrors['FactoryBuilding']['visible'][0]);?>
@@ -52,7 +52,7 @@
 					</td>
 				</tr>
 				<tr>
-					<th><?php __h('物件種別'); ?><span class="label label-important require-s"><?php __h('必須'); ?></span></th>
+					<th><?php __h('property-type'); ?><span class="label label-important require-s"><?php __h('required'); ?></span></th>
 					<td>
 						<?php echo $this->Form->select('factory_category_id', $factoryCategories, array('empty'=>false)); ?>
 <?php $err = isset($validErrors['FactoryBuilding']['factory_category_id'][0]);?>
@@ -65,15 +65,15 @@
 		</fieldset>
 <?php
 
-	$helpInline = '<span class="label label-important" style="margin-left: 10px; margin-bottom: 5px">必須</span>&nbsp;';
+	$helpInline = '<span class="label label-important" style="margin-left: 10px; margin-bottom: 5px">required</span>&nbsp;';
 	$role_admin   = $this->Session->read('Auth.User.Role.role_admin');
 	$role_manager = $this->Session->read('Auth.User.Role.role_manager');
 ?>
 		<fieldset>
-			<legend style="padding-top: 15px; margin-bottom: 5px;"><?php __h('物件情報'); ?></legend>
+			<legend style="padding-top: 15px; margin-bottom: 5px;"><?php __h('property-information'); ?></legend>
 			<table class="table-input">
 				<tr>
-					<th><?php __h('工場エリア'); ?><span class="label label-important require-s"><?php __h('必須'); ?></span></th>
+					<th><?php __h('factory-area'); ?><span class="label label-important require-s"><?php __h('required'); ?></span></th>
 					<td>
 						<?php echo $this->Form->select('factory_area_id', $factoryAreas, array('empty'=>false)); ?>
 <?php $err = isset($validErrors['FactoryBuilding']['factory_area_id'][0]);?>
@@ -83,7 +83,7 @@
 					</td>
 				</tr>
 				<tr>
-					<th><?php __h('プロジェクト名'); ?><span class="label label-important require-s"><?php __h('必須'); ?></span></th>
+					<th><?php __h('project-name'); ?><span class="label label-important require-s"><?php __h('required'); ?></span></th>
 					<td>
 						<?php echo $this->Form->text('name', array('class'=>'span5')); ?>
 <?php $err = isset($validErrors['FactoryBuilding']['name'][0]);?>
@@ -93,7 +93,7 @@
 					</td>
 				</tr>
 				<tr>
-					<th><?php __h('Project description'); ?><span class="label"></span></th>
+					<th><?php __h('project-description'); ?><span class="label"></span></th>
 					<td><?php echo $this->Wysiwyg->textarea('FactoryBuilding.note'); ?>
 <?php $err = isset($validErrors['name'][0]);?>
 <?php if ($err) { ?>
@@ -101,18 +101,9 @@
 <?php } ?>
 					</td>
 				</tr>
-				<!--tr>
-					<th><?php __h('BOIゾーン'); ?><span class="label label-important require-s"><?php __h('必須'); ?></span></th>
-					<td>
-						<?php echo $this->Form->select('boi_zone', __arrTranslate(Configure::read('BoiZone')), array('empty'=>false)); ?>
-<?php $err = isset($validErrors['FactoryBuilding']['boi_zone'][0]);?>
-<?php if ($err) { ?>
-						<p class="alert alert-error alert_valid">※<?php __h($validErrors['FactoryBuilding']['boi_zone'][0]); ?></p>
-<?php } ?>
-					</td>
-				</tr-->
+				
 				<tr>
-					<th><?php __h('工業団地ゾーン'); ?></th>
+					<th><?php __h('industrial-park-zone'); ?></th>
 					<td>
 						<label class="checkbox">
 <?php foreach (__arrTranslate(Configure::read('FactoryZone')) as $column => $name) { ?>
@@ -123,7 +114,7 @@
 					</td>
 				</tr>
 				<tr>
-					<th><?php __h('工業団地内外'); ?><span class="label label-important require-s"><?php __h('必須'); ?></span></th>
+					<th><?php __h('inside-and-outside-industrial-park'); ?><span class="label label-important require-s"><?php __h('required'); ?></span></th>
 					<td>
 						<?php echo $this->Form->select('industrial_park_id', $industrialParks, array('empty'=>false)); ?>
 <?php $err = isset($validErrors['FactoryBuilding']['industrial_park_id'][0]);?>
@@ -133,7 +124,7 @@
 					</td>
 				</tr>
 				<tr>
-					<th><?php __h('開発業者'); ?></th>
+					<th><?php __h('developer'); ?></th>
 					<td>
 						<?php echo $this->Form->text('developer', array('class'=>'span5')); ?>
 <?php $err = isset($validErrors['FactoryBuilding']['developer'][0]);?>
@@ -143,7 +134,7 @@
 					</td>
 				</tr>
 				<tr>
-					<th><?php __h('住所'); ?></th>
+					<th><?php __h('street-address'); ?></th>
 					<td>
 						<?php echo $this->Form->text('address', array('class'=>'span5')); ?>
 <?php $err = isset($validErrors['FactoryBuilding']['address'][0]);?>
@@ -153,7 +144,7 @@
 					</td>
 				</tr>
 				<tr>
-					<th><?php __h('位置情報取得用住所'); ?></th>
+					<th><?php __h('location-information-acquisition-address'); ?></th>
 					<td>
 						<?php echo $this->Form->text('map_address', array('id' => 'map_address', 'class'=>'span5')); ?>
 <?php $err = isset($validErrors['FactoryBuilding']['map_address'][0]);?>
@@ -163,7 +154,7 @@
 					</td>
 				</tr>
 				<tr>
-					<th><?php __h('位置情報'); ?>(<?php __h('緯度･経度'); ?>)</th>
+					<th><?php __h('location-information'); ?>(<?php __h('longitude-latitude'); ?>)</th>
 					<td>
 <?php $err = isset($validErrors['FactoryBuilding']['lat'][0]);?>
 <?php if ($err) { ?>
@@ -177,12 +168,12 @@
 						<?php echo $this->Form->text('lng_disabled', array('class' => 'map_lng', 'disabled' => 'disabled')); ?>
 						<?php echo $this->Form->hidden('lat', array('id' => 'map_lat', 'class' => 'map_lat')); ?>
 						<?php echo $this->Form->hidden('lng', array('id' => 'map_lng', 'class' => 'map_lng')); ?>
-						<a href="#" id="set_location_btn" class="btn btn-small" ><?php __h('住所から位置情報を設定する'); ?></a>
+						<a href="#" id="set_location_btn" class="btn btn-small" ><?php __h('set-location-information-from-address'); ?></a>
 						<div id="map_canvas" style="height:<?php echo Configure::read('Admin.Map.Size.Height'); ?>px;width: <?php echo Configure::read('Admin.Map.Size.Width'); ?>px;"></div>
 					</td>
 				</tr>
 				<tr>
-					<th><?php __h('海抜'); ?></th>
+					<th><?php __h('above-sea-levels'); ?></th>
 					<td>
 						<div class="input-append">
 							<?php echo $this->Form->text('altitude', array( 'value' => number_format( str_replace( ',', '', $this->Form->value('altitude') ) ) ) ); ?>
@@ -195,7 +186,7 @@
 					</td>
 				</tr>
 				<tr>
-					<th><?php __h('完成年'); ?></th>
+					<th><?php __h('completion-year'); ?></th>
 					<td>
 						<div class="input-append">
 							<?php echo $this->Form->text('complated', array()); ?>
@@ -208,7 +199,7 @@
 					</td>
 				</tr>
 				<tr>
-					<th><?php __h('開発面積'); ?></th>
+					<th><?php __h('development-area'); ?></th>
 					<td>
 						<div class="input-append">
 							<?php echo $this->Form->text('develop_area', array( 'value' => number_format( str_replace( ',', '', $this->Form->value('develop_area') ) ) ) ); ?>
@@ -221,7 +212,7 @@
 					</td>
 				</tr>
 				<tr>
-					<th><?php __h('リース有効期限'); ?></th>
+					<th><?php __h('lease-expiration-date'); ?></th>
 					<td>
 						<div class="input-append">
 							<?php echo $this->Form->text('lease_expiration', array()); ?>
@@ -234,11 +225,7 @@
 					</td>
 				</tr>
 				<tr>
-					<th><?php __h('【南部】ホーチミン市内
-【中部】ダナン市中心部
-【北部】ハノイ市中心部
-からの距離
-'); ?></th>
+					<th><?php __h('south-central-north-province'); ?></th>
 					<td>
 						<div class="input-append">
 							<?php echo $this->Form->text('from_hochiminh', array( 'value' => number_format( str_replace( ',', '', $this->Form->value('from_hochiminh') ) ) ) ); ?>
@@ -251,11 +238,7 @@
 					</td>
 				</tr>
 				<tr>
-					<th><?php __h('【南部】タンソンニャット国際空港
-【中部】ダナン国際空港
-【北部】ノイバイ国際空港
-からの距離
-'); ?></th>
+					<th><?php __h('south-central-north-airpot-1'); ?></th>
 					<td>
 						<div class="input-append">
 							<?php echo $this->Form->text('from_tansonnhat', array( 'value' => number_format( str_replace( ',', '', $this->Form->value('from_tansonnhat') ) ) ) ); ?>
@@ -268,11 +251,7 @@
 					</td>
 				</tr>
 				<tr>
-					<th><?php __h('【南部】ロンタン新国際空港
-【中部】ティエンサ港
-【北部】ハイフォン港
-からの距離
-'); ?></th>
+					<th><?php __h('south-central-north-airpot-2'); ?></th>
 					<td>
 						<div class="input-append">
 							<?php echo $this->Form->text('from_new_airport', array( 'value' => number_format( str_replace( ',', '', $this->Form->value('from_new_airport') ) ) ) ); ?>
@@ -285,11 +264,7 @@
 					</td>
 				</tr>
 				<tr>
-					<th><?php __h('【南部】サイゴン新港
-【中部】リエンチュウ港
-【北部】カットビー国内空港
-からの距離
-'); ?></th>
+					<th><?php __h('south-central-north-airpot-3'); ?></th>
 					<td>
 						<div class="input-append">
 							<?php echo $this->Form->text('from_saigon', array( 'value' => number_format( str_replace( ',', '', $this->Form->value('from_saigon') ) ) ) ); ?>
@@ -302,11 +277,7 @@
 					</td>
 				</tr>
 				<tr>
-					<th><?php __h('【南部】カットライ
-【中部】ロン橋
-【北部】ティンラン国際空港
-からの距離
-'); ?></th>
+					<th><?php __h('south-central-north-airpot-4'); ?></th>
 					<td>
 						<div class="input-append">
 							<?php echo $this->Form->text('from_catlai', array( 'value' => number_format( str_replace( ',', '', $this->Form->value('from_catlai') ) ) ) ); ?>
@@ -319,10 +290,7 @@
 					</td>
 				</tr>
 				<tr>
-					<th><?php __h('【南部】チーパイ港
-【北部】カイラン港
-からの距離
-'); ?></th>
+					<th><?php __h('south-central-north-pot-1'); ?></th>
 					<td>
 						<div class="input-append">
 							<?php echo $this->Form->text('from_thivai', array( 'value' => number_format( str_replace( ',', '', $this->Form->value('from_thivai') ) ) ) ); ?>
@@ -335,9 +303,7 @@
 					</td>
 				</tr>
 				<tr>
-					<th><?php __h('【南部】ブンタウ港
-からの距離
-'); ?></th>
+					<th><?php __h('south-central-north-pot-2'); ?></th>
 					<td>
 						<div class="input-append">
 							<?php echo $this->Form->text('from_vungtau', array( 'value' => number_format( str_replace( ',', '', $this->Form->value('from_vungtau') ) ) ) ); ?>
@@ -363,7 +329,7 @@
 					</td>
 				</tr>
 				<tr>
-					<th><?php __h('TOP表示項目'); ?></th>
+					<th><?php __h('top-indicates-the-project'); ?></th>
 					<td>
 						<div class="checkbox">
 <?php foreach ($addInformations as $no => $name) { ?>
@@ -374,7 +340,7 @@
 					</td>
 				</tr>
 				<tr>
-					<th><?php __h('主な入居企業'); ?></th>
+					<th><?php __h('major-tenant-companies'); ?></th>
 					<td>
 						<?php echo $this->Form->select('FactoryBuildingFactoryTenant.factory_tenant_id', $factoryTenants, array('empty'=>false, 'multiple'=>true, 'class'=>'span6')); ?>
 <?php $err = isset($validErrors['FactoryBuildingFactoryTenant']['factory_tenant_id'][0]);?>
@@ -386,7 +352,7 @@
 			</table>
 		</fieldset>
 		<fieldset>
-			<legend style="padding-top: 15px; margin-bottom: 5px;"><?php __h('インフラ環境・施設'); ?></legend>
+			<legend style="padding-top: 15px; margin-bottom: 5px;"><?php __h('infrastructure-environment'); ?></legend>
 			<table class="table-input">
 				<tr>
 					<th><?php __h('アイコン'); ?></th>
@@ -400,7 +366,7 @@
 					</td>
 				</tr>
 				<tr>
-					<th><?php __h('幹線道路'); ?></th>
+					<th><?php __h('main-road'); ?></th>
 					<td>
 						<?php echo $this->Form->text('highway', array('class'=>'span5')); ?>
 <?php $err = isset($validErrors['FactoryBuilding']['highway'][0]);?>
@@ -410,7 +376,7 @@
 					</td>
 				</tr>
 				<tr>
-					<th><?php __h('排水処理'); ?></th>
+					<th><?php __h('wastewater-treatment'); ?></th>
 					<td>
 						<?php echo $this->Form->text('sewer', array('class'=>'span5')); ?>
 <?php $err = isset($validErrors['FactoryBuilding']['sewer'][0]);?>
@@ -420,7 +386,7 @@
 					</td>
 				</tr>
 				<tr>
-					<th><?php __h('工業用水'); ?></th>
+					<th><?php __h('industrial-water'); ?></th>
 					<td>
 						<?php echo $this->Form->text('waterworks', array('class'=>'span5')); ?>
 <?php $err = isset($validErrors['FactoryBuilding']['waterworks'][0]);?>
@@ -430,7 +396,7 @@
 					</td>
 				</tr>
 				<tr>
-					<th><?php __h('雨水処理'); ?></th>
+					<th><?php __h('rainwater-treatment'); ?></th>
 					<td>
 						<?php echo $this->Form->text('reservoir', array('class'=>'span5')); ?>
 <?php $err = isset($validErrors['FactoryBuilding']['reservoir'][0]);?>
@@ -440,7 +406,7 @@
 					</td>
 				</tr>
 				<tr>
-					<th><?php __h('電力'); ?></th>
+					<th><?php __h('electric-power'); ?></th>
 					<td>
 						<?php echo $this->Form->text('electricity', array('class'=>'span5')); ?>
 <?php $err = isset($validErrors['FactoryBuilding']['electricity'][0]);?>
@@ -449,28 +415,9 @@
 <?php } ?>
 					</td>
 				</tr>
-				<!--tr>
-					<th><?php __h('天然ガス'); ?></th>
-					<td>
-						<?php echo $this->Form->text('natural_gas', array('class'=>'span5')); ?>
-<?php $err = isset($validErrors['FactoryBuilding']['natural_gas'][0]);?>
-<?php if ($err) { ?>
-						<p class="alert alert-error alert_valid">※<?php __h($validErrors['FactoryBuilding']['natural_gas'][0]); ?></p>
-<?php } ?>
-					</td>
-				</tr>
+				
 				<tr>
-					<th><?php __h('スチーム'); ?></th>
-					<td>
-						<?php echo $this->Form->text('steam', array('class'=>'span5')); ?>
-<?php $err = isset($validErrors['FactoryBuilding']['steam'][0]);?>
-<?php if ($err) { ?>
-						<p class="alert alert-error alert_valid">※<?php __h($validErrors['FactoryBuilding']['steam'][0]); ?></p>
-<?php } ?>
-					</td>
-				</tr-->
-				<tr>
-					<th><?php __h('電話通信'); ?></th>
+					<th><?php __h('telephone'); ?></th>
 					<td>
 						<?php echo $this->Form->text('telephone', array('class'=>'span5')); ?>
 <?php $err = isset($validErrors['FactoryBuilding']['telephone'][0]);?>
@@ -480,7 +427,7 @@
 					</td>
 				</tr>
 				<tr>
-					<th><?php __h('セキュリティー'); ?></th>
+					<th><?php __h('security'); ?></th>
 					<td>
 						<?php echo $this->Form->text('security', array('class'=>'span5')); ?>
 <?php $err = isset($validErrors['FactoryBuilding']['security'][0]);?>
@@ -490,7 +437,7 @@
 					</td>
 				</tr>
 				<tr>
-					<th><?php __h('管理費'); ?></th>
+					<th><?php __h('management-fee'); ?></th>
 					<td>
 						<div class="input-append">
 							<?php echo $this->Form->text('management_cost', array()); ?>
@@ -503,7 +450,7 @@
 					</td>
 				</tr>
 				<tr>
-					<th><?php __h('その他付帯設備'); ?></th>
+					<th><?php __h('other-incidental-facilities'); ?></th>
 					<td>
 						<?php echo $this->Form->textarea('facilities', array('class'=>'span5')); ?>
 <?php $err = isset($validErrors['FactoryBuilding']['facilities'][0]);?>
@@ -515,10 +462,10 @@
 			</table>
 		</fieldset>
 		<fieldset>
-			<legend style="padding-top: 15px; margin-bottom: 5px;"><?php __h('工場物件写真'); ?></legend>
+			<legend style="padding-top: 15px; margin-bottom: 5px;"><?php __h('factory-property-photo'); ?></legend>
 			<table class="table-input">
 				<tr>
-					<th><?php __h('一覧用写真'); ?></th>
+					<th><?php __h('list-photo'); ?></th>
 					<td>
 						<div class="input-section">
 <?php $num = 0; ?>
@@ -530,7 +477,7 @@
 									<?php echo $this->Form->hidden('FactoryPhoto.' . $num . '.path_hidden', array('value'=>$factoryData['FactoryPhoto'][$num]['path'])); ?>
 									<label class="delete_label" for="FactoryPhoto<?php echo $num; ?>PathDelete">
 										<?php echo $this->Form->checkbox('FactoryPhoto.' . $num . '.path_delete'); ?>
-										<?php __h('画像を削除する'); ?>
+										<?php __h('deleting-images'); ?>
 									</label>
 								</div>
 <?php } else { ?>
@@ -543,7 +490,7 @@
 <?php } ?>
 							</div>
 							<div>
-								<label class="label-caption" for="FactoryPhoto<?php echo $num; ?>Caption"><?php __h('キャプション'); ?></label>
+								<label class="label-caption" for="FactoryPhoto<?php echo $num; ?>Caption"><?php __h('caption'); ?></label>
 								<div class="controls-caption">
 									<?php echo $this->Form->text('FactoryPhoto.' . $num . '.caption', array('class'=>'span5')); ?>
 <?php $err = isset($validErrors['FactoryPhoto'][$num]['caption'][0]);?>
@@ -563,7 +510,7 @@
 									<?php echo $this->Form->hidden('FactoryPhoto.' . $num . '.path_hidden', array('value'=>$factoryData['FactoryPhoto'][$num]['path'])); ?>
 									<label class="delete_label" for="FactoryPhoto<?php echo $num; ?>PathDelete">
 										<?php echo $this->Form->checkbox('FactoryPhoto.' . $num . '.path_delete'); ?>
-										<?php __h('画像を削除する'); ?>
+										<?php __h('deleting-images'); ?>
 									</label>
 								</div>
 <?php } else { ?>
@@ -576,7 +523,7 @@
 <?php } ?>
 							</div>
 							<div>
-								<label class="label-caption" for="FactoryPhoto<?php echo $num; ?>Caption"><?php __h('キャプション'); ?></label>
+								<label class="label-caption" for="FactoryPhoto<?php echo $num; ?>Caption"><?php __h('caption'); ?></label>
 								<div class="controls-caption">
 									<?php echo $this->Form->text('FactoryPhoto.' . $num . '.caption', array('class'=>'span5')); ?>
 <?php $err = isset($validErrors['FactoryPhoto'][$num]['caption'][0]);?>
@@ -601,7 +548,7 @@
 									<?php echo $this->Form->hidden('FactoryPhoto.' . $num . '.path_hidden', array('value'=>$factoryData['FactoryPhoto'][$num]['path'])); ?>
 									<label class="delete_label" for="FactoryPhoto<?php echo $num; ?>PathDelete">
 										<?php echo $this->Form->checkbox('FactoryPhoto.' . $num . '.path_delete'); ?>
-										<?php __h('画像を削除する'); ?>
+										<?php __h('deleting-images'); ?>
 									</label>
 								</div>
 <?php } else { ?>
@@ -614,7 +561,7 @@
 <?php } ?>
 							</div>
 							<div>
-								<label class="label-caption" for="FactoryPhoto<?php echo $num; ?>Caption"><?php __h('キャプション'); ?></label>
+								<label class="label-caption" for="FactoryPhoto<?php echo $num; ?>Caption"><?php __h('caption'); ?></label>
 								<div class="controls-caption">
 									<?php echo $this->Form->text('FactoryPhoto.' . $num . '.caption', array('class'=>'span5')); ?>
 <?php $err = isset($validErrors['FactoryPhoto'][$num]['caption'][0]);?>
@@ -639,7 +586,7 @@
 									<?php echo $this->Form->hidden('FactoryPhoto.' . $num . '.path_hidden', array('value'=>$factoryData['FactoryPhoto'][$num]['path'])); ?>
 									<label class="delete_label" for="FactoryPhoto<?php echo $num; ?>PathDelete">
 										<?php echo $this->Form->checkbox('FactoryPhoto.' . $num . '.path_delete'); ?>
-										<?php __h('画像を削除する'); ?>
+										<?php __h('deleting-images'); ?>
 									</label>
 								</div>
 <?php } else { ?>
@@ -652,7 +599,7 @@
 <?php } ?>
 							</div>
 							<div>
-								<label class="label-caption" for="FactoryPhoto<?php echo $num; ?>Caption"><?php __h('キャプション'); ?></label>
+								<label class="label-caption" for="FactoryPhoto<?php echo $num; ?>Caption"><?php __h('caption'); ?></label>
 								<div class="controls-caption">
 									<?php echo $this->Form->text('FactoryPhoto.' . $num . '.caption', array('class'=>'span5')); ?>
 <?php $err = isset($validErrors['FactoryPhoto'][$num]['caption'][0]);?>
@@ -672,7 +619,7 @@
 									<?php echo $this->Form->hidden('FactoryPhoto.' . $num . '.path_hidden', array('value'=>$factoryData['FactoryPhoto'][$num]['path'])); ?>
 									<label class="delete_label" for="FactoryPhoto<?php echo $num; ?>PathDelete">
 										<?php echo $this->Form->checkbox('FactoryPhoto.' . $num . '.path_delete'); ?>
-										<?php __h('画像を削除する'); ?>
+										<?php __h('deleting-images'); ?>
 									</label>
 								</div>
 <?php } else { ?>
@@ -685,7 +632,7 @@
 <?php } ?>
 							</div>
 							<div>
-								<label class="label-caption" for="FactoryPhoto<?php echo $num; ?>Caption"><?php __h('キャプション'); ?></label>
+								<label class="label-caption" for="FactoryPhoto<?php echo $num; ?>Caption"><?php __h('caption'); ?></label>
 								<div class="controls-caption">
 									<?php echo $this->Form->text('FactoryPhoto.' . $num . '.caption', array('class'=>'span5')); ?>
 <?php $err = isset($validErrors['FactoryPhoto'][$num]['caption'][0]);?>
@@ -698,7 +645,7 @@
 					</td>
 				</tr>
 				<tr>
-					<th><?php __h('詳細用写真（サブ小）'); ?></th>
+					<th><?php __h('photo-for-details'); ?></th>
 					<td>
 						<div class="input-section">
 <?php $num = 5; ?>
@@ -710,7 +657,7 @@
 									<?php echo $this->Form->hidden('FactoryPhoto.' . $num . '.path_hidden', array('value'=>$factoryData['FactoryPhoto'][$num]['path'])); ?>
 									<label class="delete_label" for="FactoryPhoto<?php echo $num; ?>PathDelete">
 										<?php echo $this->Form->checkbox('FactoryPhoto.' . $num . '.path_delete'); ?>
-										<?php __h('画像を削除する'); ?>
+										<?php __h('deleting-images'); ?>
 									</label>
 								</div>
 <?php } else { ?>
@@ -723,7 +670,7 @@
 <?php } ?>
 							</div>
 							<div>
-								<label class="label-caption" for="FactoryPhoto<?php echo $num; ?>Caption"><?php __h('キャプション'); ?></label>
+								<label class="label-caption" for="FactoryPhoto<?php echo $num; ?>Caption"><?php __h('caption'); ?></label>
 								<div class="controls-caption">
 									<?php echo $this->Form->text('FactoryPhoto.' . $num . '.caption', array('class'=>'span5')); ?>
 <?php $err = isset($validErrors['FactoryPhoto'][$num]['caption'][0]);?>
@@ -743,7 +690,7 @@
 									<?php echo $this->Form->hidden('FactoryPhoto.' . $num . '.path_hidden', array('value'=>$factoryData['FactoryPhoto'][$num]['path'])); ?>
 									<label class="delete_label" for="FactoryPhoto<?php echo $num; ?>PathDelete">
 										<?php echo $this->Form->checkbox('FactoryPhoto.' . $num . '.path_delete'); ?>
-										<?php __h('画像を削除する'); ?>
+										<?php __h('deleting-images'); ?>
 									</label>
 								</div>
 <?php } else { ?>
@@ -756,7 +703,7 @@
 <?php } ?>
 							</div>
 							<div>
-								<label class="label-caption" for="FactoryPhoto<?php echo $num; ?>Caption"><?php __h('キャプション'); ?></label>
+								<label class="label-caption" for="FactoryPhoto<?php echo $num; ?>Caption"><?php __h('caption'); ?></label>
 								<div class="controls-caption">
 									<?php echo $this->Form->text('FactoryPhoto.' . $num . '.caption', array('class'=>'span5')); ?>
 <?php $err = isset($validErrors['FactoryPhoto'][$num]['caption'][0]);?>
@@ -776,7 +723,7 @@
 									<?php echo $this->Form->hidden('FactoryPhoto.' . $num . '.path_hidden', array('value'=>$factoryData['FactoryPhoto'][$num]['path'])); ?>
 									<label class="delete_label" for="FactoryPhoto<?php echo $num; ?>PathDelete">
 										<?php echo $this->Form->checkbox('FactoryPhoto.' . $num . '.path_delete'); ?>
-										<?php __h('画像を削除する'); ?>
+										<?php __h('deleting-images'); ?>
 									</label>
 								</div>
 <?php } else { ?>
@@ -789,7 +736,7 @@
 <?php } ?>
 							</div>
 							<div>
-								<label class="label-caption" for="FactoryPhoto<?php echo $num; ?>Caption"><?php __h('キャプション'); ?></label>
+								<label class="label-caption" for="FactoryPhoto<?php echo $num; ?>Caption"><?php __h('caption'); ?></label>
 								<div class="controls-caption">
 									<?php echo $this->Form->text('FactoryPhoto.' . $num . '.caption', array('class'=>'span5')); ?>
 <?php $err = isset($validErrors['FactoryPhoto'][$num]['caption'][0]);?>
@@ -809,7 +756,7 @@
 									<?php echo $this->Form->hidden('FactoryPhoto.' . $num . '.path_hidden', array('value'=>$factoryData['FactoryPhoto'][$num]['path'])); ?>
 									<label class="delete_label" for="FactoryPhoto<?php echo $num; ?>PathDelete">
 										<?php echo $this->Form->checkbox('FactoryPhoto.' . $num . '.path_delete'); ?>
-										<?php __h('画像を削除する'); ?>
+										<?php __h('deleting-images'); ?>
 									</label>
 								</div>
 <?php } else { ?>
@@ -822,7 +769,7 @@
 <?php } ?>
 							</div>
 							<div>
-								<label class="label-caption" for="FactoryPhoto<?php echo $num; ?>Caption"><?php __h('キャプション'); ?></label>
+								<label class="label-caption" for="FactoryPhoto<?php echo $num; ?>Caption"><?php __h('caption'); ?></label>
 								<div class="controls-caption">
 									<?php echo $this->Form->text('FactoryPhoto.' . $num . '.caption', array('class'=>'span5')); ?>
 <?php $err = isset($validErrors['FactoryPhoto'][$num]['caption'][0]);?>
@@ -842,7 +789,7 @@
 									<?php echo $this->Form->hidden('FactoryPhoto.' . $num . '.path_hidden', array('value'=>$factoryData['FactoryPhoto'][$num]['path'])); ?>
 									<label class="delete_label" for="FactoryPhoto<?php echo $num; ?>PathDelete">
 										<?php echo $this->Form->checkbox('FactoryPhoto.' . $num . '.path_delete'); ?>
-										<?php __h('画像を削除する'); ?>
+										<?php __h('deleting-images'); ?>
 									</label>
 								</div>
 <?php } else { ?>
@@ -855,7 +802,7 @@
 <?php } ?>
 							</div>
 							<div>
-								<label class="label-caption" for="FactoryPhoto<?php echo $num; ?>Caption"><?php __h('キャプション'); ?></label>
+								<label class="label-caption" for="FactoryPhoto<?php echo $num; ?>Caption"><?php __h('caption'); ?></label>
 								<div class="controls-caption">
 									<?php echo $this->Form->text('FactoryPhoto.' . $num . '.caption', array('class'=>'span5')); ?>
 <?php $err = isset($validErrors['FactoryPhoto'][$num]['caption'][0]);?>
@@ -875,7 +822,7 @@
 									<?php echo $this->Form->hidden('FactoryPhoto.' . $num . '.path_hidden', array('value'=>$factoryData['FactoryPhoto'][$num]['path'])); ?>
 									<label class="delete_label" for="FactoryPhoto<?php echo $num; ?>PathDelete">
 										<?php echo $this->Form->checkbox('FactoryPhoto.' . $num . '.path_delete'); ?>
-										<?php __h('画像を削除する'); ?>
+										<?php __h('deleting-images'); ?>
 									</label>
 								</div>
 <?php } else { ?>
@@ -888,7 +835,7 @@
 <?php } ?>
 							</div>
 							<div>
-								<label class="label-caption" for="FactoryPhoto<?php echo $num; ?>Caption"><?php __h('キャプション'); ?></label>
+								<label class="label-caption" for="FactoryPhoto<?php echo $num; ?>Caption"><?php __h('caption'); ?></label>
 								<div class="controls-caption">
 									<?php echo $this->Form->text('FactoryPhoto.' . $num . '.caption', array('class'=>'span5')); ?>
 <?php $err = isset($validErrors['FactoryPhoto'][$num]['caption'][0]);?>
@@ -903,7 +850,7 @@
 			</table>
 		</fieldset>
 		<div class="form-actions">
-			<button class="btn" type="submit"><?php __h('保存'); ?></button>
+			<button class="btn" type="submit"><?php __h('save'); ?></button>
 		</div>
 	<?php echo $this->Form->end(); ?>
 </div>

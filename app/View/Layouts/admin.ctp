@@ -40,80 +40,76 @@
 			<div class="container">
 				<a href="<?php echo $this->webroot; ?>admin"><img src="<?php echo $this->webroot; ?>img/logo.png" alt="TDC ADMINISTRATION CONSOLE" /></a>
 				<ul class="nav pull-right">
-<?php /* 物件管理 */ ?>
 <?php if (!empty($roleStaff)) { ?>
 					<li class="dropdown">
 						<a href="" class="dropdown-toggle" data-toggle="dropdown">
-							物件管理
+							<?php echo __('property-management'); ?>
 							<span class="caret"></span>
 						</a>
 						<ul class="dropdown-menu">
-							<li><a href="<?php echo $this->webroot; ?>admin/residence_buildings">住居物件管理</a></li>
-							<li><a href="<?php echo $this->webroot; ?>admin/residence_properties">住居部屋管理</a></li>
+							<li><a href="<?php echo $this->webroot; ?>admin/residence_buildings"><?php echo __('residential-property-management'); ?></a></li>
+							<li><a href="<?php echo $this->webroot; ?>admin/residence_properties"><?php echo __('residential-room-management'); ?></a></li>
 							<li class="divider"></li>
-							<li><a href="<?php echo $this->webroot; ?>admin/office_buildings">事務所物件管理</a></li>
-							<li><a href="<?php echo $this->webroot; ?>admin/office_properties">事務所部屋管理</a></li>
+							<li><a href="<?php echo $this->webroot; ?>admin/office_buildings"><?php echo __('office-property-management'); ?></a></li>
+							<li><a href="<?php echo $this->webroot; ?>admin/office_properties"><?php echo __('office-room-management'); ?></a></li>
 							<li class="divider"></li>
-							<li><a href="<?php echo $this->webroot; ?>admin/factory_buildings">工場物件管理</a></li>
-							<li><a href="<?php echo $this->webroot; ?>admin/factory_properties">工場区画管理</a></li>
+							<li><a href="<?php echo $this->webroot; ?>admin/factory_buildings"><?php echo __('factory-property-management'); ?></a></li>
+							<li><a href="<?php echo $this->webroot; ?>admin/factory_properties"><?php echo __('factory-parcel-management'); ?></a></li>
 						</ul>
 					</li>
 <?php } ?>
-<?php /* ユーザー管理 */ ?>
 <?php if (!empty($roleManager)) { ?>
 					<li class="dropdown">
 						<a href="" class="dropdown-toggle" data-toggle="dropdown">
-							ユーザー管理
+							<?php echo __('user-management'); ?>
 							<span class="caret"></span>
 						</a>
 						<ul class="dropdown-menu">
-							<li><a href="<?php echo $this->webroot; ?>admin/users">ユーザー管理</a></li>
-							<li><a href="<?php echo $this->webroot; ?>admin/roles">権限管理</a></li>
+							<li><a href="<?php echo $this->webroot; ?>admin/users"><?php echo __('user-management'); ?></a></li>
+							<li><a href="<?php echo $this->webroot; ?>admin/roles"><?php echo __('permission-management'); ?></a></li>
 						</ul>
 					</li>
 <?php } ?>
-<?php /* マスタ管理 */ ?>
 <?php if (!empty($roleAdmin)) { ?>
 					<li class="dropdown">
 						<a href="" class="dropdown-toggle" data-toggle="dropdown">
-							マスタ管理
+							<?php echo __('master-admin'); ?>
 							<span class="caret"></span>
 						</a>
 						<ul class="dropdown-menu">
-							<li><a href="<?php echo $this->webroot; ?>admin/add_informations">TOP表示項目管理</a></li>
+							<li><a href="<?php echo $this->webroot; ?>admin/add_informations"><?php echo __('top-display-item-management'); ?></a></li>
 							<li class="divider"></li>
-							<li><a href="<?php echo $this->webroot; ?>admin/areas">エリア管理</a></li>
-							<li><a href="<?php echo $this->webroot; ?>admin/factory_areas">工場エリア管理</a></li>
+							<li><a href="<?php echo $this->webroot; ?>admin/areas"><?php echo __('area-management'); ?></a></li>
+							<li><a href="<?php echo $this->webroot; ?>admin/factory_areas"><?php echo __('factory-area-management'); ?></a></li>
 							<li class="divider"></li>
-							<li><a href="<?php echo $this->webroot; ?>admin/lines">路線管理</a></li>
-							<li><a href="<?php echo $this->webroot; ?>admin/stations">駅管理</a></li>
+							<li><a href="<?php echo $this->webroot; ?>admin/lines"><?php echo __('route-management'); ?></a></li>
+							<li><a href="<?php echo $this->webroot; ?>admin/stations"><?php echo __('station-management'); ?></a></li>
 							<li class="divider"></li>
-							<li><a href="<?php echo $this->webroot; ?>admin/residence_categories">住居種別管理</a></li>
-							<li><a href="<?php echo $this->webroot; ?>admin/residence_layouts">住居間取り管理</a></li>
+							<li><a href="<?php echo $this->webroot; ?>admin/residence_categories"><?php echo __('residential-type-management'); ?></a></li>
+							<li><a href="<?php echo $this->webroot; ?>admin/residence_layouts"><?php echo __('residential-floor-plan-management'); ?></a></li>
 							<li class="divider"></li>
-							<li><a href="<?php echo $this->webroot; ?>admin/office_categories">事務所種別管理</a></li>
-							<li><a href="<?php echo $this->webroot; ?>admin/office_layouts">事務所間取り管理</a></li>
-							<li><a href="<?php echo $this->webroot; ?>admin/office_person_nums">事務所人数管理</a></li>
+							<li><a href="<?php echo $this->webroot; ?>admin/office_categories"><?php echo __('management-by-office-type'); ?></a></li>
+							<li><a href="<?php echo $this->webroot; ?>admin/office_layouts"><?php echo __('office-floor-plan-management'); ?></a></li>
+							<li><a href="<?php echo $this->webroot; ?>admin/office_person_nums"><?php echo __('office-number-management'); ?></a></li>
 							<li class="divider"></li>
-							<li><a href="<?php echo $this->webroot; ?>admin/factory_categories">工場種別管理</a></li>
-							<li><a href="<?php echo $this->webroot; ?>admin/factory_sub_categories">区画種別管理</a></li>
-							<li><a href="<?php echo $this->webroot; ?>admin/industrial_parks">工業団地内外管理</a></li>
-							<li><a href="<?php echo $this->webroot; ?>admin/factory_tenants">工場入居企業管理</a></li>
+							<li><a href="<?php echo $this->webroot; ?>admin/factory_categories"><?php echo __('factory-type-management'); ?></a></li>
+							<li><a href="<?php echo $this->webroot; ?>admin/factory_sub_categories"><?php echo __('partition-type-management'); ?></a></li>
+							<li><a href="<?php echo $this->webroot; ?>admin/industrial_parks"><?php echo __('industrial-park-management'); ?></a></li>
+							<li><a href="<?php echo $this->webroot; ?>admin/factory_tenants"><?php echo __('factory-tenant-management'); ?></a></li>
 						</ul>
 					</li>
 <?php } ?>
-<?php /* ログイン名表示 */ ?>
 <?php if (!empty($username)) { ?>
 					<li class="dropdown">
 						<a href="" class="dropdown-toggle" data-toggle="dropdown">
-						<?php echo $username; ?> さん
+						<?php echo $username; ?>
 						<span class="caret"></span>
 						</a>
 						<ul class="dropdown-menu">
-							<li><a href="<?php echo $this->webroot; ?>admin/logout">ログアウト</a></li>
+							<li><a href="<?php echo $this->webroot; ?>admin/logout"><?php echo __('logout'); ?></a></li>
 							<li class="divider"></li>
-							<li><a href="ja" class="lang">日本語</a></li>
-							<li><a href="en" class="lang">English</a></li>
+							<li><a href="jpn" class="lang"><?php echo __('japan'); ?></a></li>
+							<li><a href="eng" class="lang"><?php echo __('english'); ?></a></li>
 						</ul>
 					</li>
 <?php } ?>

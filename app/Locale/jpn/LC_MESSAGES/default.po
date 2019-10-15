@@ -133,9 +133,6 @@ msgstr "property Description"
 msgid "周辺施設"
 msgstr "Neighbor facilities"
 
-msgid "アイコン"
-msgstr "Icon"
-
 msgid "駅近"
 msgstr "Stations nearby"
 
@@ -165,6 +162,9 @@ msgstr "Facilities"
 
 msgid "特徴"
 msgstr "Features"
+
+msgid "アイコン"
+msgstr "Icon"
 
 msgid "プール"
 msgstr "Pool"
@@ -206,7 +206,7 @@ msgid "駐車場"
 msgstr "Car parking space"
 
 msgid "インターネット"
-msgstr "Internet"
+msgstr "インターネット"
 
 msgid "衛星放送(UBC+NHK)"
 msgstr "CableTV"
@@ -239,13 +239,13 @@ msgid "住居物件写真"
 msgstr "Residential property photos"
 
 msgid "詳細用写真(メイン) + TOP用"
-msgstr "Detail photos (main) + TOP run"
+msgstr "詳細用写真(メイン) + TOP用"
 
 msgid "詳細用写真(サブ大)"
-msgstr "Detail photos (sub - large)"
+msgstr "詳細用写真(サブ大)"
 
 msgid "詳細用写真(サブ小)"
-msgstr "Detail photos (sub - small)"
+msgstr "詳細用写真(サブ小)"
 
 msgid "物件ID"
 msgstr "Property ID"
@@ -281,13 +281,13 @@ msgid "操作"
 msgstr "Action"
 
 msgid "詳細用写真（メイン）＋TOP用"
-msgstr "Detail photos (main) + TOP run"
+msgstr "詳細用写真（メイン）＋TOP用"
 
 msgid "詳細用写真（サブ大）"
-msgstr "Detail photos (sub - large)"
+msgstr "詳細用写真（サブ大）"
 
 msgid "詳細用写真（サブ小）"
-msgstr "Detail photos (sub - small)"
+msgstr "詳細用写真（サブ小）"
 
 # 任意追加
 msgid "削除"
@@ -318,13 +318,13 @@ msgid "VND"
 msgstr "Dong"
 
 msgid "ホテル"
-msgstr "Hotel"
+msgstr "ホテル"
 
 msgid "銀行"
-msgstr "Bank"
+msgstr "銀行"
 
 msgid "アパート"
-msgstr "Apartment"
+msgstr "アパート"
 
 msgid "年"
 msgstr "Year"
@@ -351,139 +351,146 @@ msgid "ヘクタール"
 msgstr "Hectare"
 
 msgid "search-area-direction"
-msgstr "Please click the area which you want to find factory or industrial park in Vietnam."
+msgstr "ベトナムの工場・工業団地物件を検索したいエリアをクリックして下さい。"
 
 msgid "recommendation"
-msgstr "Recommendation"
+msgstr "おすすめ物件"
 
 msgid "contact-title"
-msgstr "Contact us for free advice and consultation !"
+msgstr "物件についてのお問い合わせはTDCベトナムまで"
 
 msgid "contact-mail-box"
-msgstr "Contact us"
+msgstr "お問い合わせフォーム"
 
 msgid "factory-registerd"
-msgstr "Currently registered"
+msgstr "現在登録物件数"
 
 msgid "factory"
-msgstr " "
+msgstr "件"
 
 msgid "inquiry-form"
-msgstr "Inquiry form"
+msgstr "お問い合わせ"
 
 msgid "inquiry-form-direction"
-msgstr "Please send inquiry by this form."
+msgstr "不動産に関するお問い合わせは、以下のフォームからお送りください。"
 
 msgid "name"
-msgstr "Name"
+msgstr "お名前"
 
 msgid "phone-number"
-msgstr "Phone number"
+msgstr "必須電話番号"
 
 msgid "company"
-msgstr "Company"
+msgstr "会社名"
 
 msgid "mail-address"
-msgstr "Mail address"
+msgstr "メールアドレス"
 
 msgid "inquiry"
-msgstr "Inquiry"
+msgstr "お問い合わせ内容"
 
 msgid "required"
-msgstr "Required"
+msgstr "必須"
 
 msgid "confirm-inquiry"
-msgstr "Confirm your inquiry"
+msgstr "入力内容の確認"
 
 msgid "reset"
-msgstr "Reset"
+msgstr "リセット"
 
 msgid "contact"
-msgstr "Contact"
+msgstr "お問い合わせ"
 
 msgid "contact-description"
-msgstr "Please fill the form below and click 'Confirm your inquiry' button."
+msgstr "入力内容をご確認の上、お間違いなければ「送信」ボタンをクリックしてください。"
 
 msgid "contact-confirm"
-msgstr "Please confirm your inquiry information and click "send" button."
+msgstr "入力内容をご確認の上、お間違いなければ「送信」ボタンをクリックしてください。"
 
 msgid "send"
-msgstr "Send"
+msgstr "送信"
+
+msgid "return-to-input-screen"
+msgstr "入力画面に戻る"
+
 
 msgid "return-to-input-screen"
 msgstr "Return to input screen"
 
 msgid "contact-thank-text-1"
-msgstr "Thank you for sending inquiry."
+msgstr "このたびはお問い合わせいただき、"
 
 msgid "contact-thank-text-2"
-msgstr "We will contact you later."
+msgstr "誠にありがとうございます。"
 
 msgid "contact-thank-text-3"
-msgstr "Please wait for a while."
+msgstr "担当者より追ってご連絡いたしますので、"
 
 msgid "contact-thank-text-4"
-msgstr " "
+msgstr "しばらくお待ち下さいませ。"
 
 msgid "back-to-top"
-msgstr "Go back to the top page"
+msgstr "トップページに戻る"
 
 msgid "footer-banner-tdc-thailand"
-msgstr "Thailand real estate information is here"
+msgstr "タイの不動産情報はこちら"
 
 msgid "footer-banner-factlink-vietnam"
-msgstr "Fact-Link Vietnam is here"
+msgstr "ファクトリンク ベトナムはこちら"
 
 msgid "footer-banner-factdepot-vietnam"
-msgstr "Online purchasing service for MRO products in Vietnam"
+msgstr "ベトナムのオンライン工具通販はこちら"
 
 msgid "about-us"
-msgstr "About us"
+msgstr "会社情報"
 
 msgid "privacy-policy"
-msgstr "Privacy policy"
+msgstr "プライバシーポリシー"
+
+msgid "about-us"
+msgstr "会社情報"
 
 msgid "breadcrumb-factory-search-all"
-msgstr "Search factory / industrial site Search from all industrial areas in Vietnam"
+msgstr "工場・工業用地を探す ベトナム全域工業団地から探す"
 
 msgid "factory-search-all-title"
-msgstr "Search from all industrial areas in Vietnam"
+msgstr "ベトナムの工業地帯・工業団地一覧"
 
 msgid "list-properties"
-msgstr "List of properties"
+msgstr "の物件一覧"
 
 msgid "icon-map"
-msgstr "Icon"
+msgstr "アイコン表示"
 
 msgid "industrial-zone"
-msgstr "Industrial zone"
+msgstr "工業団地"
 
 msgid "warehouse"
-msgstr "Warehouse"
+msgstr "倉庫"
 
 msgid "factory-map"
-msgstr "Factory"
+msgstr "工場"
 
 msgid "result"
-msgstr "Result"
+msgstr "検索結果"
 
 msgid "search-no-result"
-msgstr "Not found result"
+msgstr "該当件数0件"
 
 msgid "ctrl-first"
-msgstr "First"
+msgstr "最初へ"
 
 msgid "ctrl-previous"
-msgstr "Prev"
+msgstr "前へ"
 
 msgid "ctrl-next"
-msgstr "Next"
+msgstr "次へ"
 
 msgid "ctrl-last"
-msgstr "Last"
+msgstr "最後へ"
 
 msgid "giz"
-msgstr "General Processing Zone (GIZ)"
+msgstr "一般加工区（GIZ）"
 
 msgid "epz"
 msgstr "Output Processing Zone (EPZ)"
@@ -492,7 +499,7 @@ msgid "fz"
 msgstr "Free zone (FZ)"
 
 msgid "industrial-park"
-msgstr "Industrial park"
+msgstr "工業団地"
 
 msgid "industrial-park-no-eat"
 msgstr "Industrial park (EAT not approved)"
@@ -501,436 +508,436 @@ msgid "industrial-park-outsite"
 msgstr "Outside Industrial park"
 
 msgid "area"
-msgstr "Area"
+msgstr "エリア"
 
 msgid "completion-year"
-msgstr "Completion year"
+msgstr "完成年"
 
 msgid "year-jp"
-msgstr " "
+msgstr "年"
 
 msgid "レストラン"
-msgstr "Restaurant"
+msgstr "レストラン"
 
 msgid "病院"
-msgstr "Hospital"
+msgstr "病院"
 
 msgid "ショッピングセンター"
-msgstr "Shopping Centre"
+msgstr "ショッピングセンター"
 
 msgid "details-property"
-msgstr "See Details of this property"
+msgstr "物件の詳細を見る"
 
 msgid "breadcrumb-factory-search-south"
-msgstr "Search for factories / industrial sites Search for listings in southern Vietnam"
+msgstr "工場・工業用地を探す ベトナム南部の物件一覧から探す"
 
 msgid "breadcrumb-factory-search-north"
-msgstr "Search for factories and industrial sites Search for properties in northern Vietnam"
+msgstr "工場・工業用地を探す ベトナム北部の物件一覧から探す"
 
 msgid "breadcrumb-factory-search-central"
-msgstr "Search for factories and industrial sites Search for properties in central Vietnam"
+msgstr "工場・工業用地を探す ベトナム中部の物件一覧から探す"
 
 msgid "property-information"
-msgstr "Property Information"
+msgstr "物件情報"
 
 msgid "developer"
-msgstr "Developer"
+msgstr "開発業者"
 
 msgid "address"
-msgstr "Address"
+msgstr "住所"
 
 msgid "above-sea-levels"
-msgstr "Above sea levels"
+msgstr "海抜"
 
 msgid "site-area"
-msgstr "Site area"
+msgstr "開発面積"
 
 msgid "lease-expiration-year"
-msgstr "Lease expiration year"
+msgstr "リース有効期限"
 
 msgid "notable-tenants"
-msgstr "Notable Tenants"
+msgstr "主な入居企業一覧"
 
 msgid "infrastructure-environment"
-msgstr "Infrastructure environment and facilities"
+msgstr "インフラ環境・施設"
 
 msgid "motorway"
-msgstr "Motorway"
+msgstr "幹線道路"
 
 msgid "industrial-water"
-msgstr "Industrial water"
+msgstr "工業用水"
 
 msgid "electric-power"
-msgstr "Electric power"
+msgstr "電力"
 
 msgid "telephone"
-msgstr "Telephone"
+msgstr "電話通信"
 
 msgid "management-fee"
-msgstr "Management Fee"
+msgstr "管理費"
 
 msgid "drainage-wate"
-msgstr "Drainage Wate"
+msgstr "排水処理"
 
 msgid "stormwater-treatment"
-msgstr "Stormwater treatment"
+msgstr "雨水処理"
 
 msgid "natural-gas"
-msgstr "Natural Gas"
+msgstr "天然ガス"
 
 msgid "security"
-msgstr "Security"
+msgstr "セキュリティー"
 
 msgid "remarks"
-msgstr "Remarks"
+msgstr "その他付帯設備"
 
 msgid "distance-major-areas"
-msgstr "Distance to major areas"
+msgstr "主要地域までの距離"
 
 msgid "from-hochiminh-city"
-msgstr "From Ho Chi Minh City"
+msgstr "ホーチミン市内"
 
 msgid "from-tansonnhat-airport"
-msgstr "From Tan Son Nhat International Airport"
+msgstr "タンソンニャット国際空港"
 
 msgid "from-longthanh-airport"
-msgstr "From Long Thanh International Airport"
+msgstr "ロンタン新国際空港（2020年完成予定）"
 
 msgid "form-newsaigon-port"
-msgstr "From New Saigon Port"
+msgstr "サイゴン新港"
 
 msgid "from-catlai-port"
-msgstr "From Cat Lai Port"
+msgstr "カットライ"
 
 msgid "from-thivai-port"
-msgstr "From Thi Vai Port"
+msgstr "チーパイ港"
 
 msgid "from-hanoi-city"
-msgstr "From Ha Noi City"
+msgstr "ハノイ市中心部"
 
 msgid "from-noibai-airport"
-msgstr "From Noi Bai International Airport"
+msgstr "ノイバイ国際空港"
 
 msgid "from-haiphong-port"
-msgstr "From Haiphong Port"
+msgstr "ハイフォン港"
 
 msgid "from-catbi-airport"
-msgstr "From Cat Bi Domestic Airport"
+msgstr "カットビー国内空港"
 
 msgid "from-tienlang-airport"
-msgstr "From Tien Lang International Airport"
+msgstr "ティンラン国際空港"
 
 msgid "from-cailan-port"
-msgstr "From Cai Lan Port"
+msgstr "カイラン港"
 
 msgid "from-danang-city"
-msgstr "From Da Nang City"
+msgstr "ダナン市中心部"
 
 msgid "from-danang-airport"
-msgstr "From Da Nang International Airport"
+msgstr "ダナン国際空港"
 
 msgid "from-tiensa-port"
-msgstr "From Tien Sa Port"
+msgstr "ティエンサ港"
 
 msgid "from-lienchieu-port"
-msgstr "From Lien Chieu Port"
+msgstr "リエンチュウ港"
 
 msgid "from-rong-bridge"
-msgstr "From Rong Bridge"
+msgstr "ロン橋"
 
 msgid "from-vungtau-port"
-msgstr "From Vung Tau Port"
+msgstr "ブンタウ港"
 
 msgid "land-for-sale"
-msgstr "Land for sale"
+msgstr "売り土地"
 
 msgid "factory-area"
-msgstr "Factory area"
+msgstr "工場面積"
 
 msgid "land-area"
-msgstr "Land area"
+msgstr "敷地面積"
 
 msgid "price"
-msgstr "Price"
+msgstr "家賃"
 
 msgid "note"
-msgstr "Note"
+msgstr "備考"
 
 msgid "lease-fee"
-msgstr "Lease fee"
+msgstr "リース料金"
 
 msgid "recommend"
-msgstr "Recommend"
+msgstr "おすすめ"
 
 msgid "new"
-msgstr "New"
+msgstr "新着"
 
 msgid "popular"
-msgstr "Popular"
+msgstr "人気"
 
 msgid "property-management"
-msgstr "Property management"
+msgstr "物件管理"
 
 msgid "residential-property-management"
-msgstr "Residential property management"
+msgstr "住居物件管理"
 
 msgid "residential-room-management"
-msgstr "Residential room management"
+msgstr "住居部屋管理"
 
 msgid "office-property-management"
-msgstr "Office property management"
+msgstr "事務所物件管理"
 
 msgid "office-room-management"
-msgstr "Office room management"
+msgstr "事務所部屋管理"
 
 msgid "factory-property-management"
-msgstr "Factory property management"
+msgstr "工場物件管理"
 
 msgid "factory-parcel-management"
-msgstr "Factory parcel management"
+msgstr "工場区画管理"
 
 msgid "user-management"
-msgstr "User management"
+msgstr "ユーザー管理"
 
 msgid "permission-management"
-msgstr "Permission management"
+msgstr "権限管理"
 
 msgid "master-admin"
-msgstr "Master admin"
+msgstr "マスタ管理"
 
 msgid "top-display-item-management"
-msgstr "TOP display item management"
+msgstr "TOP表示項目管理"
 
 msgid "area-management"
-msgstr "Area management"
+msgstr "エリア管理"
 
 msgid "factory-area-management"
-msgstr "Factory area management"
+msgstr "工場エリア管理"
 
 msgid "route-management"
-msgstr "Route management"
+msgstr "路線管理"
 
 msgid "station-management"
-msgstr "Station management"
+msgstr "駅管理"
 
 msgid "residential-type-management"
-msgstr "Residential type management"
+msgstr "住居種別管理"
 
 msgid "residential-floor-plan-management"
-msgstr "Residential floor plan management"
+msgstr "住居間取り管理"
 
 msgid "management-by-office-type"
-msgstr "Management by office type"
+msgstr "事務所種別管理"
 
 msgid "office-floor-plan-management"
-msgstr "Office floor plan management"
+msgstr "事務所間取り管理"
 
 msgid "office-number-management"
-msgstr "Office number management"
+msgstr "事務所人数管理"
 
 msgid "factory-type-management"
-msgstr "Factory type management"
+msgstr "工場種別管理"
 
 msgid "partition-type-management"
-msgstr "Partition type management"
+msgstr "区画種別管理"
 
 msgid "industrial-park-management"
-msgstr "Industrial park management"
+msgstr "工業団地内外管理"
 
 msgid "factory-tenant-management"
-msgstr "Factory tenant management"
+msgstr "工場入居企業管理"
 
 msgid "japan"
-msgstr "Japan"
+msgstr "日本語"
 
 msgid "english"
 msgstr "English"
 
 msgid "logout"
-msgstr "Logout"
+msgstr "ログアウト"
 
 msgid "residential-property"
-msgstr "Residential property"
+msgstr "住居物件"
 
 msgid "show-up-to"
-msgstr "Show up to"
+msgstr "件まで表示"
 
 msgid "out-of"
-msgstr "Out of"
+msgstr "件中"
 
 msgid "property-name"
-msgstr "Property Name"
+msgstr "物件名"
 
 msgid "property-type"
-msgstr "Property type"
+msgstr "物件種別"
 
 msgid "area"
-msgstr "Area"
+msgstr "エリア"
 
 msgid "update-date"
-msgstr "Update date"
+msgstr "更新日"
 
 msgid "update-frequency"
-msgstr "Update frequency"
+msgstr "更新頻度"
 
 msgid "action"
-msgstr "Action"
+msgstr "操作"
 
 msgid "office-property"
-msgstr "Office property"
+msgstr "事務所物件"
 
 msgid "edit"
-msgstr "Edit"
+msgstr "編集"
 
 msgid "factory-property"
-msgstr "Factory property"
+msgstr "工場物件"
 
 msgid "factory-property-list"
-msgstr "Factory Property List"
+msgstr "工場物件一覧"
 
 msgid "add-factory-property"
-msgstr "Add factory property"
+msgstr "工場物件の追加"
 
 msgid "edit-factory-properties"
-msgstr "Edit factory properties"
+msgstr "工場物件の編集"
 
 msgid "property-id"
-msgstr "Property ID"
+msgstr "物件ID"
 
 msgid "project-name"
-msgstr "Project name"
+msgstr "プロジェクト名"
 
 msgid "inside-and-outside-industrial-park"
-msgstr "Inside and outside industrial park"
+msgstr "工業団地内外"
 
 msgid "street-address"
-msgstr "Street address"
+msgstr "住所"
 
 msgid "display-priority"
-msgstr "Display priority"
+msgstr "表示優先度"
 
 msgid "front-display"
-msgstr "Front display"
+msgstr "フロント表示"
 
 msgid "icon"
-msgstr "Icon"
+msgstr "アイコン"
 
 msgid "additional-information"
-msgstr "Additional Information"
+msgstr "追加情報"
 
 msgid "search"
-msgstr "Search"
+msgstr "検索"
 
 msgid "list"
-msgstr "List"
+msgstr "一覧"
 
 msgid "add-to"
-msgstr "Add to"
+msgstr "追加"
 
 msgid "delete"
-msgstr "Delete"
+msgstr "削除"
 
 msgid "delete-confirm"
-msgstr "Are you sure you want to delete the information %s ?"
+msgstr "%sの情報を削除しますか ?"
 
 msgid "partition-operation"
-msgstr "Partition operation"
+msgstr "区画操作"
 
 msgid "operation"
-msgstr "Operation"
+msgstr "操作"
 
 msgid "industrial-park-zone"
-msgstr "Industrial park zone"
+msgstr "工業団地ゾーン"
 
 msgid "location-information-acquisition-address"
-msgstr "Location information acquisition address"
+msgstr "位置情報取得用住所"
 
 msgid "location-information"
-msgstr "Location information"
+msgstr "位置情報"
 
 msgid "longitude-latitude"
-msgstr "Longitude-Latitude"
+msgstr "緯度･経度"
 
 msgid "set-location-information-from-address"
-msgstr "Set location information from address"
+msgstr "住所から位置情報を設定する"
 
 msgid "development-area"
-msgstr "Development area"
+msgstr "開発面積"
 
 msgid "lease-expiration-date"
-msgstr "Lease expiration date"
+msgstr "リース有効期限"
 
 msgid "south-central-north-province"
-msgstr "Distance from [South] Ho Chi Minh City [Central] Da Nang City Center [North] Hanoi City Center"
+msgstr "【南部】ホーチミン市内【中部】ダナン市中心部【北部】ハノイ市中心部からの距離"
 
 msgid "south-central-north-airpot-1"
-msgstr "Distance from [Southern] Tan Son Nhat International Airport [Central] Da Nang International Airport [North] Noi Bai International Airport"
+msgstr "【南部】タンソンニャット国際空港【中部】ダナン国際空港【北部】ノイバイ国際空港からの距離"
 
 msgid "south-central-north-airpot-2"
-msgstr "Distance from [Southern] Long Thanh International Airport [Central] Tien Sa Port [North] Hai Phong Port"
+msgstr "【南部】ロンタン新国際空港【中部】ティエンサ港【北部】ハイフォン港からの距離"
 
 msgid "south-central-north-airpot-3"
-msgstr "Distance from [Southern] Saigon New Port[Central] Lienchu Port[North] Catby Domestic Airport"
+msgstr "【南部】サイゴン新港【中部】リエンチュウ港【北部】カットビー国内空港からの距離"
 
 msgid "south-central-north-airpot-4"
-msgstr "Distance from [Southern] Cut rye[Central] Ron Bridge [North] Tin Lan International Airport"
+msgstr "【南部】カットライ【中部】ロン橋【北部】ティンラン国際空港からの距離"
 
 msgid "south-central-north-pot-1"
-msgstr "Distance from [Southern] Chibai Port [North] Cai Lan Port"
+msgstr "【南部】チーパイ港【北部】カイラン港からの距離"
 
 msgid "south-central-north-pot-2"
-msgstr "Distance from [Southern] Vung Tau Port"
+msgstr "【南部】ブンタウ港からの距離"
 
 msgid "top-indicates-the-project"
-msgstr "TOP indicates the project"
+msgstr "TOP表示項目"
 
 msgid "major-tenant-companies"
-msgstr "Major tenant companies"
+msgstr "主な入居企業"
 
 msgid "main-road"
-msgstr "Main road"
+msgstr "幹線道路"
 
 msgid "wastewater-treatment"
-msgstr "Wastewater treatment"
+msgstr "排水処理"
 
 msgid "rainwater-treatment"
-msgstr "Rainwater treatment"
+msgstr "雨水処理"
 
 msgid "other-incidental-facilities"
-msgstr "Other incidental facilities"
+msgstr "その他付帯設備"
 
 msgid "factory-property-photo"
-msgstr "Factory property photo"
+msgstr "工場物件写真"
 
 msgid "list-photo"
-msgstr "List photo"
+msgstr "一覧用写真"
 
 msgid "deleting-images"
-msgstr "Deleting images"
+msgstr "画像を削除する"
 
 msgid "caption"
-msgstr "Caption"
+msgstr "キャプション"
 
 msgid "photo-for-details"
-msgstr "Photo for details (sub-small)"
+msgstr "詳細用写真（サブ小）"
 
 msgid "save"
-msgstr "Save"
+msgstr "保存"
 
 msgid "factory-type-list"
-msgstr "Factory type list"
+msgstr "工場種別一覧"
 
 msgid "add-factory-type"
-msgstr "Add factory type"
+msgstr "工場種別の追加"
 
 msgid "edit-factory-type"
-msgstr "Edit factory type"
+msgstr "工場種別の編集"
 
 msgid "factory-type-name"
-msgstr "Factory type name"
+msgstr "工場種別名"
 
 msgid "edit"
-msgstr "Edit"
+msgstr "編集"
 
 msgid "project-description"
-msgstr "Project description"
+msgstr "プロジェクトの説明"

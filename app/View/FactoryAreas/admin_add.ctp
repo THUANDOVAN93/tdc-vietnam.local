@@ -1,4 +1,4 @@
-<script src="http://maps.google.com/maps/api/js?v=3&sensor=false" type="text/javascript" charset="UTF-8"></script>
+<script src="https://maps.google.com/maps/api/js?key=AIzaSyDRe-SLe-oVJhmp1x0wDGUdtVOmFceE8eU&v=quarterly&v=3" type="text/javascript" charset="UTF-8"></script>
 <?php echo $this->Html->script('jquery.map'); ?>
 
 <div class="row-fluid">
@@ -22,6 +22,17 @@
 <?php } ?>
 					</td>
 				</tr>
+
+				<tr>
+					<th><?php __h('Factory area Decription'); ?><span class="label label-important"></span></th>
+					<td><?php echo $this->Wysiwyg->textarea('FactoryArea.note'); ?>
+<?php $err = isset($validErrors['note'][0]);?>
+<?php if ($err) { ?>
+					<p class="alert alert-error alert_valid">※<?php __h($validErrors['note'][0]); ?></p>
+<?php } ?>
+					</td>
+				</tr>
+				
 				<tr>
 					<th><?php __h('位置情報取得用住所'); ?></th>
 					<td>

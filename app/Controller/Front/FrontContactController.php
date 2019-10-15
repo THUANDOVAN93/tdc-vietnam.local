@@ -196,7 +196,8 @@ class FrontContactController extends FrontController {
 		if ($this->request->is('post')) {
 			$admin_email_from = "factlinkportvn@gmail.com";
 			$admin_email_to = "info@fact-link.com.vn";
-			$admin_email_cc = array( "sato@tdc-thai.com", "kuwada@fact-link.com.vn", "sale3@fact-link.com.vn" );
+			//$admin_email_to = "thuandovan93@gmail.com";
+			//$admin_email_cc = array( "sato@tdc-thai.com", "kuwada@fact-link.com.vn", "sale3@fact-link.com.vn" );
 
 			$category = "";
 			if ($this->building == "residence") {

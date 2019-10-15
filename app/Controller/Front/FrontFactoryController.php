@@ -310,6 +310,7 @@ class FrontFactoryController extends FrontController {
         //物件情報を取得
         $id = $this->params['id'];
         $factoryBuilding = $this->FactoryBuilding->findByIdAndVisible($id, '1');
+        //debug($this->Model->lastQuery());
         if (!$factoryBuilding) {
             $this->redirect('/factory/area/');
         }
