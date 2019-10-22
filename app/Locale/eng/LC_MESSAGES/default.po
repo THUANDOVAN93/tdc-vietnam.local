@@ -371,8 +371,11 @@ msgstr " "
 msgid "inquiry-form"
 msgstr "Inquiry form"
 
+msgid "inquiry-form-benefit"
+msgstr "We can offer FREE consultation providing the available property (land or factory for rent) information with updated price based on your requirement (location, size, budget)."
+
 msgid "inquiry-form-direction"
-msgstr "Please send inquiry by this form."
+msgstr "Please fill the form below and click 'Confirm your inquiry' button."
 
 msgid "name"
 msgstr "Name"

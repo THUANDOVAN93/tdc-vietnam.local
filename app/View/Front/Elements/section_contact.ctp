@@ -4,6 +4,7 @@
 <div id="contactCnt">
 
 <h3 class="contact_title"><?php echo __('inquiry-form'); ?></h3>
+<p><?php echo __('inquiry-form-benefit'); ?></p>
 <p><?php echo __('inquiry-form-direction'); ?></p>
 <ul id="tab">
 	

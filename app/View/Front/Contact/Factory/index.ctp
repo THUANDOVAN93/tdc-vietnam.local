@@ -8,13 +8,9 @@
 		<!-- /topicpath -->
 		
 		<div id="contactCnt">
-			<h2 class="contact-title">
-				<?php echo __('inquiry-form'); ?>
-			</h2>
-
-			<p>
-				<?php echo __('contact-description'); ?>
-			</p>
+			<h2 class="contact-title"><?php echo __('inquiry-form'); ?></h2>
+			<p><?php echo __('inquiry-form-benefit'); ?></p>
+			<p><?php echo __('inquiry-form-direction'); ?></p>
 			<div class="errorTxt">
 <?php $err = isset($validErrors['ContactFactory']['company_name'][0]); ?>
 <?php if ($err) { ?>

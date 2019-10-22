@@ -371,8 +371,11 @@ msgstr "件"
 msgid "inquiry-form"
 msgstr "お問い合わせ"
 
+msgid "inquiry-form-benefit"
+msgstr "TDCベトナムは、お客様の条件（立地、広さ、予算など）に合わせて現在空きのあるベトナム国内の工場用地・レンタル工場の最新の価格情報を無償でご提供いたします。物件視察のアテンドも可能です。お気軽にお問い合わせください。"
+
 msgid "inquiry-form-direction"
-msgstr "不動産に関するお問い合わせは、以下のフォームからお送りください。"
+msgstr "入力内容をご確認の上、お間違いなければ「入力内容の確認」ボタンをクリックしてください。"
 
 msgid "name"
 msgstr "お名前"
