@@ -22,6 +22,18 @@ class FactoryArea extends AppModel {
     );
 
 /**
+ * Translate
+ *
+ * @var string
+ */
+    public $actsAs = array(
+        'Translate' => array(
+            'name' => 'nameTranslation',
+            'note' => 'noteTranslation'
+        )
+    );
+
+/**
  * Validation rules
  *
  * @var array

@@ -26,7 +26,7 @@
 			<?php } elseif ( $this->params['url']['area'] == 'central' ) { ?>
 			<li><a href="<?php echo $this->webroot; ?>factory/area/central/"><?php echo __('breadcrumb-factory-search-central'); ?></a></li>
 			<?php } else { ?>
-			<li><a href="<?php echo $this->webroot; ?>factory/area/"><?php echo __('breadcrumb-factory-search-all'); ?></a></li>
+			<li><a href="<?php echo $this->webroot.'factory/area/list/'.$factoryBuilding['FactoryArea']['id']; ?>"><?php echo $factoryBuilding['FactoryArea']['name'].' '.__('list-properties'); ?></a></li>
 			<?php } ?>
 			<li><?php echo h($factoryBuilding['FactoryBuilding']['name']); ?></li>
 		</ul>
@@ -450,155 +450,47 @@
 			</table>
 		</div>
 		<!-- /detail_article_feature -->
-
-<?php $isProperty = false; ?>
-<?php $subNum = 1; ?>
-<?php if (isset($factoryBuilding['FactoryProperty'][$subNum]) && count($factoryBuilding['FactoryProperty'][$subNum])) { ?>
-<?php     $isProperty = true; ?>
-		<!-- detail_article_table/ -->
-		<h3 class="detail_hgroup"><?php echo __('land-for-sale'); ?></h3>
-		<div class="detail_article_table factory imgbtn">
-			<table summary="売り工場">
-				<tr>
-					<th><span><?php echo __('factory-area'); ?></span><br>(m&sup2)</th>
-					<th><span><?php echo __('land-area'); ?></span><br>(m&sup2)</th>
-					<th><span><?php echo __('price'); ?></span><br>(USD)</th>
-					<th><span><?php echo __('note'); ?></span></th>
-				</tr>
-<?php     foreach($factoryBuilding['FactoryProperty'][$subNum] as $factoryProperty) { ?>
-				<tr>
-					
-					<td class="col2"><?php echo h(number_format(str_replace(',','',$factoryProperty['floor_space']))); ?></td>
-					<td class="col2"><?php echo h(number_format(str_replace(',','',$factoryProperty['site_area']))); ?></td>
-					<td class="col3"><?php echo h(number_format(str_replace(',','',$factoryProperty['price']))); ?></td>
-					<td class="note">
-						<?php echo nl2br(h($factoryProperty['note'])); ?>
-						<ul class="clearfix">
-<?php         if (isset($factoryProperty['drowing']) && !empty($factoryProperty['drowing'])) { ?>
-							<li><a href="<?php echo $this->webroot; ?>upload/FactoryProperties/<?php echo $factoryProperty['drowing']; ?>" class="colorbox" title="<?php echo h($factorySubCategories[$factoryProperty['factory_sub_category_id']]); ?>の間取り図" target="_blank"><img src="<?php echo $this->webroot; ?>common/images/search/detail_btn_floor.png" width="95" height="28" alt="間取り図" /></a></li>
-<?php         } ?>
-<?php         if (isset($factoryProperty['arrangement_plan']) && !empty($factoryProperty['arrangement_plan'])) { ?>
-							<li><a href="<?php echo $this->webroot; ?>upload/FactoryProperties/<?php echo $factoryProperty['arrangement_plan']; ?>" class="colorbox" title="<?php echo h($factorySubCategories[$factoryProperty['factory_sub_category_id']]); ?>の位置図" target="_blank"><img src="<?php echo $this->webroot; ?>common/images/search/detail_btn_position.png" width="95" height="28" alt="位置図" /></a></li>
-<?php         } ?>
-						</ul>
-					</td>
-				</tr>
+		<!-- detail_photo:start/ -->
+		<div class="detail_photo clearfix">
+<?php if (isset($factoryBuilding['FactoryPhoto']['Sub']) && count($factoryBuilding['FactoryPhoto']['Sub'])) { ?>
+<?php     foreach($factoryBuilding['FactoryPhoto']['Sub'] as $factoryPhotoSub) { ?>
+			<div class="detail_photo_l">
+				<p class="detail_photo_img">
+					<a href="<?php echo $this->webroot; ?>upload/FactoryBuildings/<?php echo $factoryPhotoSub['path']; ?>" class="colorbox" title="<?php echo $factoryPhotoSub['caption']; ?>" target="_blank">
+						<span class="imgbtn"><img src="<?php echo $this->webroot; ?>common/images/search/layer_l.png" alt="" /></span>
+						<img src="<?php echo $this->webroot; ?>upload/FactoryBuildings/tmb_sub_<?php echo $factoryPhotoSub['path']; ?>" alt="<?php echo $factoryPhotoSub['caption']; ?>" />
+					</a>
+				</p>
+				<p class="detail_photo_txt"><?php echo $factoryPhotoSub['caption']; ?></p>
+			</div>
 <?php     } ?>
-			</table>
-		</div>
-		<!-- /detail_article_table -->
 <?php } ?>
+		</div>
+		<!-- /detail_photo:end -->
 
-<?php $subNum = 2; ?>
-<?php if (isset($factoryBuilding['FactoryProperty'][$subNum]) && count($factoryBuilding['FactoryProperty'][$subNum])) { ?>
-<?php     $isProperty = true; ?>
-		<!-- detail_article_table/ -->
-		<h3 class="detail_hgroup"><img src="<?php echo $this->webroot; ?>common/images/search/detail_ttl_factory-rent.png" width="62" height="16" alt="貸し工場" /></h3>
-		<div class="detail_article_table factory imgbtn">
-			<table summary="貸し工場">
-				<tr>
-					<th><?php echo __('factory-area'); ?><br>(m&sup2)</th>
-					<th><?php echo __('land-area'); ?><br>(m&sup2)</th>
-					<th><?php echo __('price'); ?><br>(USD/月)</th>
-					<th><?php echo __('note'); ?></th>
-				</tr>
-<?php     foreach($factoryBuilding['FactoryProperty'][$subNum] as $factoryProperty) { ?>
-				<tr>
-					
-					<td class="col2"><?php echo h(number_format(str_replace(',','',$factoryProperty['floor_space']))); ?></td>
-					<td class="col2"><?php echo h(number_format(str_replace(',','',$factoryProperty['site_area']))); ?></td>
-					<td class="col3"><?php echo h(number_format(str_replace(',','',$factoryProperty['price']))); ?></td>
-					<td class="note">
-						<?php echo nl2br(h($factoryProperty['note'])); ?>
-						<ul class="clearfix">
-<?php         if (isset($factoryProperty['drowing']) && !empty($factoryProperty['drowing'])) { ?>
-							<li><a href="<?php echo $this->webroot; ?>upload/FactoryProperties/<?php echo $factoryProperty['drowing']; ?>" class="colorbox" title="<?php echo h($factorySubCategories[$factoryProperty['factory_sub_category_id']]); ?>の間取り図" target="_blank"><img src="<?php echo $this->webroot; ?>common/images/search/detail_btn_floor.png" width="95" height="28" alt="間取り図" /></a></li>
+		<!-- detail_photo:start/ -->
+<?php if (isset($factoryBuilding['FactoryPhoto']['SubSub']) && count($factoryBuilding['FactoryPhoto']['SubSub'])) { ?>
+<?php     $count = 1;?>
+<?php     foreach($factoryBuilding['FactoryPhoto']['SubSub'] as $factoryPhotoSubSub) { ?>
+<?php         if ($count == 1 || $count == 4) { ?>
+		<div class="detail_photo clearfix">
 <?php         } ?>
-<?php         if (isset($factoryProperty['arrangement_plan']) && !empty($factoryProperty['arrangement_plan'])) { ?>
-							<li><a href="<?php echo $this->webroot; ?>upload/FactoryProperties/<?php echo $factoryProperty['arrangement_plan']; ?>" class="colorbox" title="<?php echo h($factorySubCategories[$factoryProperty['factory_sub_category_id']]); ?>の位置図" target="_blank"><img src="<?php echo $this->webroot; ?>common/images/search/detail_btn_position.png" width="95" height="28" alt="位置図" /></a></li>
-<?php         } ?>
-						</ul>
-					</td>
-				</tr>
-<?php     } ?>
-			</table>
+			<div class="detail_photo_s">
+				<p class="detail_photo_img">
+					<a href="<?php echo $this->webroot; ?>upload/FactoryBuildings/<?php echo $factoryPhotoSubSub['path']; ?>" class="colorbox" title="<?php echo $factoryPhotoSubSub['caption']; ?>" target="_blank">
+						<span class="imgbtn"><img src="<?php echo $this->webroot; ?>common/images/search/layer_s.png" alt="" /></span>
+						<img src="<?php echo $this->webroot; ?>upload/FactoryBuildings/tmb_subsub_<?php echo $factoryPhotoSubSub['path']; ?>" alt="<?php echo $factoryPhotoSubSub['caption']; ?>" />
+					</a>
+				</p>
+				<p class="detail_photo_txt"><?php echo $factoryPhotoSubSub['caption']; ?></p>
+			</div>
+<?php         if ($count == 3 || count($factoryBuilding['FactoryPhoto']['SubSub']) == $count) { ?>
 		</div>
-		<!-- /detail_article_table -->
-<?php } ?>
-
-<?php $subNum = 3; ?>
-<?php if (isset($factoryBuilding['FactoryProperty'][$subNum]) && count($factoryBuilding['FactoryProperty'][$subNum])) { ?>
-<?php     $isProperty = true; ?>
-		<!-- detail_article_table/ -->
-		<h3 class="detail_hgroup"><img src="<?php echo $this->webroot; ?>common/images/search/detail_ttl_warehouse-sell.png" width="62" height="16" alt="売り倉庫" /></h3>
-		<div class="detail_article_table factory imgbtn">
-			<table summary="売り倉庫">
-				<tr>
-					<th><?php echo __('factory-area'); ?><br>(m&sup2)</th>
-					<th><?php echo __('land-area'); ?><br>(m&sup2)</th>
-					<th><?php echo __('price'); ?><br>(USD)</th>
-					<th><?php echo __('note'); ?></th>
-				</tr>
-<?php     foreach($factoryBuilding['FactoryProperty'][$subNum] as $factoryProperty) { ?>
-				<tr>
-					
-					<td class="col2"><?php echo h(number_format(str_replace(',','',$factoryProperty['floor_space']))); ?></td>
-					<td class="col2"><?php echo h(number_format(str_replace(',','',$factoryProperty['site_area']))); ?></td>
-					<td class="col3"><?php echo h(number_format(str_replace(',','',$factoryProperty['price']))); ?></td>
-					<td class="note">
-						<?php echo nl2br(h($factoryProperty['note'])); ?>
-						<ul class="clearfix">
-<?php         if (isset($factoryProperty['drowing']) && !empty($factoryProperty['drowing'])) { ?>
-							<li><a href="<?php echo $this->webroot; ?>upload/FactoryProperties/<?php echo $factoryProperty['drowing']; ?>" class="colorbox" title="<?php echo h($factorySubCategories[$factoryProperty['factory_sub_category_id']]); ?>の間取り図" target="_blank"><img src="<?php echo $this->webroot; ?>common/images/search/detail_btn_floor.png" width="95" height="28" alt="間取り図" /></a></li>
 <?php         } ?>
-<?php         if (isset($factoryProperty['arrangement_plan']) && !empty($factoryProperty['arrangement_plan'])) { ?>
-							<li><a href="<?php echo $this->webroot; ?>upload/FactoryProperties/<?php echo $factoryProperty['arrangement_plan']; ?>" class="colorbox" title="<?php echo h($factorySubCategories[$factoryProperty['factory_sub_category_id']]); ?>の位置図" target="_blank"><img src="<?php echo $this->webroot; ?>common/images/search/detail_btn_position.png" width="95" height="28" alt="位置図" /></a></li>
-<?php         } ?>
-						</ul>
-					</td>
-				</tr>
+<?php         $count ++;?>
 <?php     } ?>
-			</table>
-		</div>
-		<!-- /detail_article_table -->
 <?php } ?>
-
-<?php $subNum = 4; ?>
-<?php if (isset($factoryBuilding['FactoryProperty'][$subNum]) && count($factoryBuilding['FactoryProperty'][$subNum])) { ?>
-<?php     $isProperty = true; ?>
-		<!-- detail_article_table/ -->
-		<h3 class="detail_hgroup"><img src="<?php echo $this->webroot; ?>common/images/search/detail_ttl_warehouse-rent.png" width="62" height="16" alt="貸し倉庫" /></h3>
-		<div class="detail_article_table factory imgbtn">
-			<table summary="貸し倉庫">
-				<tr>
-					<th><?php echo __('factory-area'); ?><br>(m&sup2)</th>
-					<th><?php echo __('land-area'); ?><br>(m&sup2)</th>
-					<th><?php echo __('price'); ?><br>(USD/月)</th>
-					<th><?php echo __('note'); ?></th>
-				</tr>
-<?php     foreach($factoryBuilding['FactoryProperty'][$subNum] as $factoryProperty) { ?>
-				<tr>
-					
-					<td class="col2"><?php echo h(number_format(str_replace(',','',$factoryProperty['floor_space']))); ?></td>
-					<td class="col2"><?php echo h(number_format(str_replace(',','',$factoryProperty['site_area']))); ?></td>
-					<td class="col3"><?php echo h(number_format(str_replace(',','',$factoryProperty['price']))); ?></td>
-					<td class="note">
-						<?php echo nl2br(h($factoryProperty['note'])); ?>
-						<ul class="clearfix">
-<?php         if (isset($factoryProperty['drowing']) && !empty($factoryProperty['drowing'])) { ?>
-							<li><a href="<?php echo $this->webroot; ?>upload/FactoryProperties/<?php echo $factoryProperty['drowing']; ?>" class="colorbox" title="<?php echo h($factorySubCategories[$factoryProperty['factory_sub_category_id']]); ?>の間取り図" target="_blank"><img src="<?php echo $this->webroot; ?>common/images/search/detail_btn_floor.png" width="95" height="28" alt="間取り図" /></a></li>
-<?php         } ?>
-<?php         if (isset($factoryProperty['arrangement_plan']) && !empty($factoryProperty['arrangement_plan'])) { ?>
-							<li><a href="<?php echo $this->webroot; ?>upload/FactoryProperties/<?php echo $factoryProperty['arrangement_plan']; ?>" class="colorbox" title="<?php echo h($factorySubCategories[$factoryProperty['factory_sub_category_id']]); ?>の位置図" target="_blank"><img src="<?php echo $this->webroot; ?>common/images/search/detail_btn_position.png" width="95" height="28" alt="位置図" /></a></li>
-<?php         } ?>
-						</ul>
-					</td>
-				</tr>
-<?php     } ?>
-			</table>
-		</div>
-		<!-- /detail_article_table -->
-<?php } ?>
+		<!-- /detail_photo:end -->
 
 		<!-- contents_inquiry/ -->
 <?php echo $this->element('section_contact'); ?>

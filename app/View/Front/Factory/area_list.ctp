@@ -5,9 +5,7 @@
 	<!-- topicpath/ -->
 <ul id="topicpath">
 	<li class="home"><a href="<?php echo $this->webroot; ?>">TOP</a></li>
-	<li><a href="<?php echo $this->webroot; ?>factory/area/"><?php echo __('breadcrumb-factory-search-all'); ?></a></li>
-	<li><?php echo h($factoryArea['FactoryArea']['name']);
-	echo __('list-properties'); ?></li>
+	<li><?php echo $factoryArea['FactoryArea']['name'].' '.__('list-properties'); ?></li>
 </ul>
 <!-- /topicpath -->
 

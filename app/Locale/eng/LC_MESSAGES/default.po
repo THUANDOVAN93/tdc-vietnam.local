@@ -937,3 +937,20 @@ msgstr "Edit"
 
 msgid "project-description"
 msgstr "Project description"
+
+msgid "factory-area-list"
+msgstr "Factory area list"
+
+msgid "add-factory-area"
+msgstr "Add factory area"
+
+msgid "edit-factory-area"
+msgstr "Edit factory area"
+
+msgid "factory-area-name"
+msgstr "Factory area name"
+
+msgid "factory-area-description"
+msgstr "Factory area description"
+
+

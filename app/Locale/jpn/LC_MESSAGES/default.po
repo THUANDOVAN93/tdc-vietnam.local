@@ -98,7 +98,7 @@ msgid "住所"
 msgstr "Address"
 
 msgid "位置情報(緯度･経度)"
-msgstr "Location info (lattitude, longtitude)"
+msgstr "位置情報(緯度･経度)"
 
 msgid "位置情報"
 msgstr "Location info"
@@ -944,3 +944,20 @@ msgstr "編集"
 
 msgid "project-description"
 msgstr "プロジェクトの説明"
+
+msgid "factory-area-list"
+msgstr "工場エリア一覧"
+
+msgid "add-factory-area"
+msgstr "工場エリアの追加"
+
+msgid "edit-factory-area"
+msgstr "工場エリアの編集"
+
+msgid "factory-area-name"
+msgstr "工場エリア名"
+
+msgid "factory-area-description"
+msgstr "工場エリアの説明"
+
+

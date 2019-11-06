@@ -28,9 +28,16 @@ class PageRenderComponent extends Component {
             'canonical'   => '',
         );
         $info = Set::merge($defaultInfo, $settingInfo);
-        $this->c->set('title_for_layout', $info['title']);
-        $this->c->set('meta_keywords'   , $info['keywords']);
-        $this->c->set('meta_description', $info['description']);
+        if (Configure::read('Config.language') == 'eng') {
+            $this->c->set('title_for_layout', $info['title-en']);
+            $this->c->set('meta_keywords'   , $info['keywords-en']);
+            $this->c->set('meta_description', $info['description-en']);
+        } else {
+            $this->c->set('title_for_layout', $info['title']);
+            $this->c->set('meta_keywords'   , $info['keywords']);
+            $this->c->set('meta_description', $info['description']);
+        }
+        
         $this->c->set('link_canonical', $info['canonical']);
         $this->c->render($info['render']);
     }

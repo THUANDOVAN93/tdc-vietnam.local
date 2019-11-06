@@ -29,6 +29,10 @@ class SetuptranslationsShell extends AppShell {
         $this->_regenerateI18n('FactoryBuilding', array('security'), 'jpn');
         $this->_regenerateI18n('FactoryProperty', array('note'), 'eng');
         $this->_regenerateI18n('FactoryProperty', array('note'), 'jpn');
+        $this->_regenerateI18n('FactoryArea', array('name'), 'eng');
+        $this->_regenerateI18n('FactoryArea', array('name'), 'jpn');
+        $this->_regenerateI18n('FactoryArea', array('note'), 'eng');
+        $this->_regenerateI18n('FactoryArea', array('note'), 'jpn');
     }
 
     /**

@@ -3,18 +3,18 @@
 
 <div class="row-fluid">
 
-	<h2><?php __h('工場エリア管理'); ?></h2>
+	<h2><?php __h('factory-area-management'); ?></h2>
 	<ul class="nav nav-tabs">
-		<li><a href="<?php echo $this->webroot; ?>admin/factory_areas"><?php __h('工場エリア一覧'); ?></a></li>
-		<li class="active"><a href="<?php echo $this->webroot; ?>admin/factory_areas/add"><?php __h('工場エリアの追加'); ?></a></li>
-		<li class="disabled"><a><?php __h('工場エリアの編集'); ?></a></li>
+		<li><a href="<?php echo $this->webroot; ?>admin/factory_areas"><?php __h('factory-area-list'); ?></a></li>
+		<li class="active"><a href="<?php echo $this->webroot; ?>admin/factory_areas/add"><?php __h('add-factory-area'); ?></a></li>
+		<li class="disabled"><a><?php __h('edit-factory-area'); ?></a></li>
 	</ul>
 
 	<?php echo $this->Form->create('FactoryArea', array('class' => 'form-horizontal')); ?>
 		<fieldset>
 			<table class="table-input">
 				<tr>
-					<th><?php __h('工場エリア名'); ?><span class="label label-important require-s"><?php __h('必須'); ?></span></th>
+					<th><?php __h('factory-area-name'); ?><span class="label label-important require-s"><?php __h('必須'); ?></span></th>
 					<td><?php echo $this->Form->text('name'); ?>
 <?php $err = isset($validErrors['name'][0]);?>
 <?php if ($err) { ?>
@@ -34,7 +34,7 @@
 				</tr>
 				
 				<tr>
-					<th><?php __h('位置情報取得用住所'); ?></th>
+					<th><?php __h('location-information-acquisition-address'); ?></th>
 					<td>
 						<?php echo $this->Form->text('address', array('id' => 'map_address', 'class'=>'span5')); ?>
 <?php $err = isset($validErrors['address'][0]);?>

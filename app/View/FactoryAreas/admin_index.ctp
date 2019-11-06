@@ -1,17 +1,17 @@
 <div class="row-fluid">
 
-	<h2><?php __h('工場エリア管理'); ?></h2>
+	<h2><?php __h('factory-area-management'); ?></h2>
 	<ul class="nav nav-tabs">
-		<li class="active"><a href="<?php echo $this->webroot; ?>admin/factory_areas"><?php __h('工場エリア一覧'); ?></a></li>
-		<li><a href="<?php echo $this->webroot; ?>admin/factory_areas/add"><?php __h('工場エリアの追加'); ?></a></li>
-		<li class="disabled"><a><?php __h('工場エリアの編集'); ?></a></li>
+		<li class="active"><a href="<?php echo $this->webroot; ?>admin/factory_areas"><?php __h('factory-area-list'); ?></a></li>
+		<li><a href="<?php echo $this->webroot; ?>admin/factory_areas/add"><?php __h('add-factory-area'); ?></a></li>
+		<li class="disabled"><a><?php __h('edit-factory-area'); ?></a></li>
 	</ul>
 
 	<?php echo $this->BootstrapPaginator->pagination(); ?>
 	<table class="table table-striped">
 		<tr>
-			<th>工場エリア名</th>
-			<th class="actions">操作</th>
+			<th><?php __h('factory-area-name'); ?></th>
+			<th class="actions"><?php __h('action'); ?></th>
 		</tr>
 		<?php foreach ($factoryAreas as $factoryArea): ?>
 		<tr>
