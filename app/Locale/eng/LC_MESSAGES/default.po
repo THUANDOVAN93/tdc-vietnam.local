@@ -953,4 +953,28 @@ msgstr "Factory area name"
 msgid "factory-area-description"
 msgstr "Factory area description"
 
+msgid "contact-content-subject"
+msgstr "Thank you for your inquiry."
+
+msgid "contact-content-1"
+msgstr "Thank you for contacting to TDC Vietnam. We receive your inquiry. Our staff will contact to you shortly."
+
+msgid "contact-content-2"
+msgstr "Please be noted that this email is only for sending, please do not reply to this email."
+
+msgid "contact-content-3"
+msgstr " "
+
+msgid "contact-content-company-name"
+msgstr "Company name"
+
+msgid "contact-content-name"
+msgstr "Name"
+
+msgid "contact-content-phone"
+msgstr "Phone"
+
+msgid "contact-content-inquiry"
+msgstr "Inquiry"
+
 

@@ -11,6 +11,16 @@
     RewriteRule business/trade-point.html$ /business/trade-point.php [R=301,L]
     RewriteRule business/trade.html$ /business/trade.php [R=301,L]
 
+    # empty url -> redirect to en/
+    #RewriteCond %{QUERY_STRING} !lang=(en|de)
+    #RewriteRule ^$ en/ [R=301,L]aa
+
+    # url is ONLY '/en' or '/de' -> redirect to /en/ or /de/ (adding slash)
+    #RewriteRule ^(en|de)$  $1/ [R=301,L]
+
+    # now all urls have eng/ jpn/ -> parse them
+    RewriteRule ^(eng|jpn)/(.*)$  $2?lang=$1&%{query_STRING} [L]
+
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^(.*)$ index.php [QSA,L]

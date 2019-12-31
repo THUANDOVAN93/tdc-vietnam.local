@@ -960,4 +960,27 @@ msgstr "工場エリア名"
 msgid "factory-area-description"
 msgstr "工場エリアの説明"
 
+msgid "contact-content-subject"
+msgstr "お問い合わせ有難うございます。"
+
+msgid "contact-content-1"
+msgstr "TDCにお問い合わせありがとうございます。"
+
+msgid "contact-content-2"
+msgstr "送信内容は以下の通りです。担当者がご連絡をさせていただきます。"
+
+msgid "contact-content-3"
+msgstr "こちらのメールは送信専用ですので返信をしないでください。"
+
+msgid "contact-content-company-name"
+msgstr "会社名"
+
+msgid "contact-content-name"
+msgstr "お名前"
+
+msgid "contact-content-phone"
+msgstr "電話番号"
+
+msgid "contact-content-inquiry"
+msgstr "お問い合わせ内容"
 
