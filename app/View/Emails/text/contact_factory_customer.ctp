@@ -1,23 +1,27 @@
-TDCにお問い合わせありがとうございます。
-送信内容は以下の通りです。担当者がご連絡をさせていただきます。
-こちらのメールは送信専用ですので返信をしないでください。
-Thank you for contacting to TDC Vietnam. We receive your inquiry. Our staff will contact to you shortly.
-Please be noted that this email is only for sending, please do not reply to this email.
+<?php echo __('contact-content-1'); ?>
+
+<?php echo __('contact-content-2'); ?>
+
+<?php echo __('contact-content-3'); ?>
 
 
-会社名
+<?php echo __('contact-content-company-name'); ?>
+
 <?php echo $contact['company_name']; ?>
 
 
-お名前
+<?php echo __('contact-content-name'); ?>
+
 <?php echo $contact['name']; ?>
 
 
-電話番号
+<?php echo __('contact-content-phone'); ?>
+
 <?php echo $contact['tel']; ?>
 
 
-お問い合わせ内容
+<?php echo __('contact-content-inquiry'); ?>
+
 <?php echo $contact['message']; ?>
 <?php if (isset($contact['factory_sub_category']) && strlen($contact['factory_sub_category']) > 0) { echo $factorySubCategories[$contact['factory_sub_category']]; } ?>
 
@@ -49,11 +53,8 @@ E-mail
 
 ------------------------------
 
-東京デベロップメントコンサルタント
 TDC Vietnam
 602/43 Dien Bien Phu, Ward 22, Binh Thanh District, Ho Chi Minh City.
 Tel: +84 888 767 138 - Email: info@fact-link.com.vn
-
-
 
 ------------------------------

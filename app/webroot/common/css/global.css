@@ -712,9 +712,7 @@ li.contents_fontmenu_nav03 a {
 	padding-left:0;
 	background-image:none;
 }
-#topicpath li a {
-	text-decoration:underline;
-}
+
 #topicpath li a:hover {
 	text-decoration:none;
 }
@@ -1042,4 +1040,14 @@ a:hover {
 .box-blue {
 	border-color: #00a0c1;
 	color: #00a0c1;
+}
+
+.px-5 {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.py-10 {
+	padding-left: 10px;
+	padding-right: 10px;
 }

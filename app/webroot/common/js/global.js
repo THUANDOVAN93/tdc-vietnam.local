@@ -58,12 +58,12 @@ WordpressFeed.prototype.disp = function(item) {
 	else $(this.target[index]).append('<dl><dt><span>' + pubDate + '</span></dt><dd>' + pubTitle + '</dd></dl>');
 }
 
-// click
-$(document).ready(function(){
-	$(document).bind("contextmenu",function(e){
-		return false;
-	});
-});
+// prevent click
+// $(document).ready(function(){
+// 	$(document).bind("contextmenu",function(e){
+// 		return false;
+// 	});
+// });
 
 // accordion
 $(document).ready(function(){

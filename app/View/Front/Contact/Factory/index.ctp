@@ -76,35 +76,35 @@
 					<col width="" />
 					
 					<tr>
-						<th scope="row" class="d-flex d-flex-content-middle">
-							<span><?php echo __('name'); ?></span>
-							<span class="must"><?php echo __('required'); ?></span>
+						<th scope="row">
+							<span class="d-inline-block px-5"><?php echo __('name'); ?></span>
+							<span class="must d-inline-block"><?php echo __('required'); ?></span>
 						</th>
 						<td>
 							<?php echo $this->Form->text('ContactFactory.name', array('class' => 'type01')); ?>
 						</td>
 					</tr>
 					<tr>
-						<th scope="row" class="d-flex d-flex-content-middle">
-							<span><?php echo __('phone-number'); ?></span>
-							<span class="must"><?php echo __('required'); ?></span>
+						<th scope="row">
+							<span class="d-inline-block px-5"><?php echo __('phone-number'); ?></span>
+							<span class="must d-inline-block"><?php echo __('required'); ?></span>
 						</th>
 						<td>
 							<?php echo $this->Form->text('ContactFactory.tel', array('class' => 'type01')); ?>
 						</td>
 					</tr>
 					<tr>
-						<th scope="row" class="d-flex d-flex-content-middle">
-							<span><?php echo __('company'); ?></span>
+						<th scope="row">
+							<span class="px-5"><?php echo __('company'); ?></span>
 						</th>
 						<td>
 							<?php echo $this->Form->text('ContactFactory.company_name', array('class' => 'type02')); ?>
 						</td>
 					</tr>
 					<tr>
-						<th scope="row" class="d-flex d-flex-content-middle">
-							<span><?php echo __('mail-address'); ?></span>
-							<span class="must"><?php echo __('required'); ?></span>
+						<th scope="row">
+							<span class="d-inline-block px-5"><?php echo __('mail-address'); ?></span>
+							<span class="must d-inline-block"><?php echo __('required'); ?></span>
 						</th>
 						<td>
 							<?php echo $this->Form->text('ContactFactory.email1', array('class' => 'type04')); ?>@
@@ -114,9 +114,9 @@
 						</td>
 					</tr>
 					<tr>
-						<th scope="row" class="d-flex d-flex-content-middle">
-							<span><?php echo __('inquiry'); ?></span>
-							<span class="must"><?php echo __('required'); ?></span>
+						<th scope="row">
+							<span class="d-inline-block px-5"><?php echo __('inquiry'); ?></span>
+							<span class="must d-inline-block"><?php echo __('required'); ?></span>
 						</th>
 						<td>
 							<?php echo $this->Form->textarea('ContactFactory.message', array('cols' => '', 'rows' => '5', 'class' => 'type02')); ?>

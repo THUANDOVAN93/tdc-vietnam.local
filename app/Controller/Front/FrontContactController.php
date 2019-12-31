@@ -192,7 +192,6 @@ class FrontContactController extends FrontController {
 			return $this->index();
 		}
 
-		//メールの送信
 		if ($this->request->is('post')) {
 			$admin_email_from = "factlinkportvn@gmail.com";
 			$admin_email_to = "info@fact-link.com.vn";
@@ -220,30 +219,24 @@ class FrontContactController extends FrontController {
 			);
 
 			try {
-				// 管理者宛
-				$email = new CakeEmail('gmail'); //$contactの設定を読み込みます。
-
+				// Send to admin
+				$email = new CakeEmail('gmail'); 
 				$email->template('contact_'.$this->building.'_admin');
-
-				$email->viewVars($ary_vars); //送信内容をテンプレートファイルに渡します
-
+				$email->viewVars($ary_vars);
 				$email->from($this->request->data['Contact'.$category]['email']);
-
 				$email->to($admin_email_to);
 				$email->subject('【不動産ベトナム】'.$category_txt.'のお問い合わせ');
 				if($email->send()){
 					//echo "送信できた";
 				}
 
-				// お客様宛
-				$email = new CakeEmail('gmail'); //$contactの設定を読み込みます。
-
+				// Send to customer
+				$email = new CakeEmail('gmail');
 				$email->template('contact_'.$this->building.'_customer');
-
 				$email->viewVars($ary_vars);
 				$email->from($admin_email_from);
 				$email->to($this->request->data['Contact'.$category]['email']);
-				$email->subject('【TDC】'.$category_txt.'お問い合わせありがとうございます。');				
+				$email->subject('【TDC Vietnam】'.__('contact-content-subject'));		
 				if($email->send()){
 					//echo "送信できた";
 				}

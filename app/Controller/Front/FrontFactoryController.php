@@ -246,8 +246,9 @@ class FrontFactoryController extends FrontController {
         $this->set('factoryAreas', $factoryAreas);
         $this->set('factoryAreaCurrentId', $factoryAreaId);
 
-        //画面表示
+        //Screen display
         Configure::write('Page.infolist.FrontFactory.area_list.title', sprintf(Configure::read('Page.infolist.FrontFactory.area_list.title'), $factoryArea['FactoryArea']['name']));
+        Configure::write('Page.infolist.FrontFactory.area_list.title-en', sprintf(Configure::read('Page.infolist.FrontFactory.area_list.title-en'), $factoryArea['FactoryArea']['name']));
         $this->PageRender->render('area_list');
     }
 
@@ -356,8 +357,10 @@ class FrontFactoryController extends FrontController {
         $factoryAreaCurrent = $this->FactoryArea->find();
         $this->set('factoryAreaCurrentId', $factoryBuilding['FactoryBuilding']['factory_area_id']);
 
-        //画面表示
+        //Screen display
         Configure::write('Page.infolist.FrontFactory.area_detail.title', sprintf(Configure::read('Page.infolist.FrontFactory.area_detail.title'), $factoryBuilding['FactoryBuilding']['name']));
+        Configure::write('Page.infolist.FrontFactory.area_detail.title-en', sprintf(Configure::read('Page.infolist.FrontFactory.area_detail.title-en'), $factoryBuilding['FactoryBuilding']['name']));
+        
         $this->PageRender->render('area_detail');
     }
 }
