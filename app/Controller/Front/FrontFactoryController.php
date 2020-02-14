@@ -20,8 +20,8 @@ class FrontFactoryController extends FrontController {
     // 工場・工業用地を探す エリアから探す
     public function area_index() {
         // Add Left Menu (Edit By Thuando)
-        $factoryAreas = $this->FactoryArea->find('all');
-        $this->set('factoryAreas', $factoryAreas);
+        // $factoryAreas = $this->FactoryArea->find('all');
+        // $this->set('factoryAreas', $factoryAreas);
 
         $this->PageRender->render('area_index');
     }
@@ -242,8 +242,8 @@ class FrontFactoryController extends FrontController {
         $this->set(compact('factoryCategories', 'factorySubCategories', 'factoryTenants', 'industrialParks'));
 
         // Add Left Menu (Edit By Thuando)
-        $factoryAreas = $this->FactoryArea->find('all');
-        $this->set('factoryAreas', $factoryAreas);
+        // $factoryAreas = $this->FactoryArea->find('all');
+        // $this->set('factoryAreas', $factoryAreas);
         $this->set('factoryAreaCurrentId', $factoryAreaId);
 
         //Screen display
@@ -351,8 +351,8 @@ class FrontFactoryController extends FrontController {
         $this->set('detailLink', 'factory/'.$id);
 
         // Add Left Menu (Edit By Thuando)
-        $factoryAreas = $this->FactoryArea->find('all');
-        $this->set('factoryAreas', $factoryAreas);
+        // $factoryAreas = $this->FactoryArea->find('all');
+        // $this->set('factoryAreas', $factoryAreas);
 
         $factoryAreaCurrent = $this->FactoryArea->find();
         $this->set('factoryAreaCurrentId', $factoryBuilding['FactoryBuilding']['factory_area_id']);

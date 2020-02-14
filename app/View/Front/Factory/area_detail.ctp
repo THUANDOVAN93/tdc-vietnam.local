@@ -336,7 +336,7 @@
 		</ul>
 <?php
 		//エリアサーチ（北部・中部）
-		$area_master = array( 'north' => array( 'Phu Tho', 'Ninh Binh', 'Lang Son', 'Thai Nguyen', 'Vinh Phuc', 'Ha Noi', 'Hoa Binh', 'Bac Ninh', 'Bac Giang', 'Hai Duong', 'Hung Yen', 'Hai Phong', 'Ha Nam', 'Nam Dinh', 'Quang Ninh', 'Thai Binh' ), 'center' => array( 'Da Nang') );
+		$area_master = array( 'north' => array( 'Phu Tho', 'Ninh Binh', 'Lang Son', 'Thai Nguyen', 'Vinh Phuc', 'Ha Noi', 'Hoa Binh', 'Bac Ninh', 'Bac Giang', 'Hai Duong', 'Hung Yen', 'Hai Phong', 'Ha Nam', 'Nam Dinh', 'Quang Ninh', 'Thai Binh' ), 'center' => array( 'Da Nang', 'Phu Yen', 'Nghe An') );
 
 		$find = false;
 		foreach( $area_master as $key => $arr_s ) {
