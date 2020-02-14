@@ -59,30 +59,18 @@ class FrontTopController extends FrontController {
         }
 
         // Add Left Menu (Edit By Thuando)
-        //$factoryAreas = $this->FactoryArea->find('all');
-        //$this->FactoryArea->bindTranslation(array('name' => 'nameTranslation'));
-        //$this->FactoryArea->locale = "eng";
-        //$this->FactoryArea->FactoryBuildingOfArea->locale = "jpn";
-        $this->FactoryArea->Behaviors->load('Containable');
-
-        //debug($this->FactoryArea->FactoryBuildingOfArea->Behaviors);exit;
-        // if (!$this->FactoryArea->FactoryBuildingOfArea->Behaviors->enabled('Translate')) {
-        //     var_dump("this case");exit();
-        //     $this->FactoryArea->FactoryBuildingOfArea->Behaviors->enable('Translate');
-        // }
-
-        //$this->FactoryArea->FactoryBuildingOfArea->Behaviors->load('Translate');
-        //$this->FactoryArea->FactoryBuildingOfArea->Behaviors->enable('Translate', array('name' => 'nameTranslation'));
-        $factoryAreas = $this->FactoryArea->find('all', array(
-                'fields' => array('FactoryArea.id','FactoryArea.name'),
-                // 'contain' => array(
-                //     'FactoryBuildingOfArea' => array(
-                //         'fields' => array('FactoryBuildingOfArea.id', 'FactoryBuildingOfArea.name')
-                //     )
-                // )
+        $factoryAreas = $this->FactoryArea->find('all',
+            array(
+                'fields' => array('id', 'name', 'area'),
+                'order' => array('area ASC'),
+                'contain' => array(
+                    'FactoryBuildingOfArea' => array(
+                        'fields' => array('id', 'name'),
+                    )
+                )
             )
         );
-        //debug($factoryAreas);die();
+        //debug($factoryAreas);exit();
         $this->set('factoryAreas', $factoryAreas);
 
         $this->set(compact(

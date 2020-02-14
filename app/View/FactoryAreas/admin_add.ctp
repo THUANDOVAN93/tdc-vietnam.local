@@ -24,6 +24,17 @@
 				</tr>
 
 				<tr>
+					<th><?php __h('area'); ?></th>
+					<td>
+						<?php echo $this->Form->select('area', __arrTranslate(Configure::read('largeArea')), array('empty'=>false)); ?>
+<?php $err = isset($validErrors['area'][0]);?>
+<?php if ($err) { ?>
+						<p class="alert alert-error alert_valid">※<?php __h($validErrors['area'][0]); ?></p>
+<?php } ?>
+					</td>
+				</tr>
+
+				<tr>
 					<th><?php __h('Factory area Decription'); ?><span class="label label-important"></span></th>
 					<td><?php echo $this->Wysiwyg->textarea('FactoryArea.note'); ?>
 <?php $err = isset($validErrors['note'][0]);?>

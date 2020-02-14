@@ -301,3 +301,9 @@ Configure::write('TenantForm', array(
     1 => '新規',
     2 => '移転',
 ));
+
+Configure::write('largeArea', array(
+    1 => '1 (SOUTH AREA) ',
+    2 => '2 (CENTRAL AREA) ',
+    3 => '3 (NORTH AREA) ',
+));

@@ -29,5 +29,17 @@ class FrontController extends AppController {
 
         $totalBuildingCount = ($fctCnt);
         $this->set('totalBuildingCount', $totalBuildingCount);
+        $factoryAreas = $this->FactoryArea->find('all',
+            array(
+                'fields' => array('id', 'name', 'area'),
+                'order' => array('area ASC'),
+                'contain' => array(
+                    'FactoryBuildingOfArea' => array(
+                        'fields' => array('id', 'name'),
+                    )
+                )
+            )
+        );
+        $this->set('factoryAreas', $factoryAreas);
     }
 }
