@@ -13,6 +13,7 @@ class FrontContactController extends FrontController {
 		'ContactOffice',
 		'ContactFactory',
 		'FactoryProperty',
+		'FactoryArea',
 	);
 
 	public function beforeFilter() {
